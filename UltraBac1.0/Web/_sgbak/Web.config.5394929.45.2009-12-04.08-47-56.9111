@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">
+  <configSections>
+    <section name="enterpriseLibrary.ConfigurationSource" type="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ConfigurationSourceSection, Microsoft.Practices.EnterpriseLibrary.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+    <section name="ZNode.Libraries.DataAccess.Data" type="ZNode.Libraries.DataAccess.Data.Bases.NetTiersServiceSection, ZNode.Libraries.DataAccess.Data" allowDefinition="MachineToApplication" restartOnExternalChanges="true"/>
+    <!-- Atlas Ajax Control - Start-->
+    <sectionGroup name="system.web.extensions" type="System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <sectionGroup name="scripting" type="System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+        <section name="scriptResourceHandler" type="System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="MachineToApplication"/>
+        <sectionGroup name="webServices" type="System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+          <section name="jsonSerialization" type="System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="Everywhere"/>
+          <section name="profileService" type="System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="MachineToApplication"/>
+          <section name="authenticationService" type="System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="false" allowDefinition="MachineToApplication"/>
+        </sectionGroup>
+      </sectionGroup>
+    </sectionGroup>
+		<section name="customForms" type="FormManager"	/>
+    <!-- Atlas Ajax Control -   End-->
+  </configSections>
+  <enterpriseLibrary.ConfigurationSource selectedSource="File Configuration Source">
+    <sources>
+      <add name="File Configuration Source" type="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.FileConfigurationSource, Microsoft.Practices.EnterpriseLibrary.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" filePath="entlib.config"/>
+    </sources>
+  </enterpriseLibrary.ConfigurationSource>
+  <connectionStrings>
+		<add name="ZNodeECommerceDB" connectionString="Data Source=dev-vs-sql1;Initial Catalog=ultrabac;user id=ultrabac_dbo;password=dogShamp001" />
+    <add name="ZNodeECommerceDBDev" connectionString="Data Source=dev-vs-sql1;Initial Catalog=ultrabac;user id=ultrabac_dbo;password=dogShamp001" />
+    <add name="ZNodeECommerceDBStaging" connectionString="Data Source=sta-vs-sql1;Initial Catalog=ultrabac;user id=ultrabac_dbo;password=dogShamp00" />
+		<add name="GoldmineDB__Live(withodbc)" connectionString="Dsn=testodbc;uid=ultrabac_dbo;pwd=dogShamp00" providerName="System.Data.Odbc" />
+		<add name="GoldmineDB" connectionString="Data Source=dev-vs-sql1;Initial Catalog=UltrabacGoldmineTest;uid=ultrabac_dbo;pwd=dogShamp001" />
+		<add name="GoldmineDBStaging" connectionString="Data Source=sta-vs-sql1;Initial Catalog=UltrabacGoldmineTest;uid=ultrabac_dbo;pwd=dogShamp00" />
+    <add name="RESELLER_DB_CONNECTION_STRING" connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source='c:\projects\ultrabac\ultrabac1.0\web\app_data\db-dealers.mdb'"/>
+  </connectionStrings>
+	<customForms>
+		<add page="resellers-become" formPath="~/_controls/forms/requestResellerAccount.ascx" />
+		<add page="resellers-update" formPath="~/_controls/forms/updateResellerContactInfo.ascx" />
+		<add page="support-form" formPath="~/_controls/forms/technicalSupport.ascx" />
+		<add page="licensing-form" formPath="~/_controls/forms/licensingForm.ascx" />
+		<add page="licensing-volume" formPath="~/_controls/forms/licensingVolume.ascx" />
+		<add page="ubdr-request" formPath="~/_controls/forms/ubdrRequest.ascx" />
+		<add page="resellers-order" formPath="~/_controls/forms/resellersOrder.ascx" />
+		<add page="jp-dlform" formPath="~/_controls/forms/jpDownloadForm.ascx" />
+		<add page="download-trial" formPath="~/_controls/forms/downloadTrialProduct.ascx" />
+		<add page="download-upgrade" formPath="~/_controls/forms/downloadUpgrade.ascx" />
+		<add page="demo-request" formPath="~/_controls/forms/requestEvalProduct.ascx" />
+	</customForms>
+  <ZNode.Libraries.DataAccess.Data defaultProvider="SqlNetTiersProvider">
+    <providers>
+      <add name="SqlNetTiersProvider" type="ZNode.Libraries.DataAccess.Data.SqlClient.SqlNetTiersProvider, ZNode.Libraries.DataAccess.Data.SqlClient" connectionStringName="ZNodeECommerceDB" providerInvariantName="System.Data.SqlClient" entityFactoryType="ZNode.Libraries.DataAccess.Entities.EntityFactory" useEntityFactory="true" enableEntityTracking="true" enableMethodAuthorization="false" useStoredProcedure="false"/>
+    </providers>
+  </ZNode.Libraries.DataAccess.Data>
+  <system.web>  
+		<sessionState timeout="360" />
+		<httpRuntime maxRequestLength="20480" />
+    <pages>
+      <controls>
+        <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+        <add tagPrefix="ajaxToolKit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit"/>
+				<add tagPrefix="ZNode" tagName="CustomMessage" src="~/Themes/Default/CustomMessage/CustomMessage.ascx"/>
+				<add tagPrefix="ZNode" tagName="Content" src="~/Themes/Default/Content/content.ascx" />
+				<add tagPrefix="Pop" tagName="NavLeftSidebar" src="~/_controls/navSidebar.ascx" />
+				<add tagPrefix="Pop" tagName="RightSidebar" src="~/_controls/template/RightSidebar.ascx" />
+				<add tagPrefix="Ult" tagName="NewsletterSignup" src="~/_controls/forms/newsletterSignup.ascx" />
+				<add tagPrefix="Ult" tagName="GetAssistance" src="~/_controls/getAssistance.ascx" />
+				<add tagPrefix="Pop" namespace="Pop.Web.UI.WebControls" assembly="pop.web" />
+      </controls>
+    </pages>
+    <httpModules>
+      <add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+    </httpModules>
+    <!-- Atlas Ajax Control - End-->
+    <httpHandlers>
+      <add path="Reserved.ReportViewerWebControl.axd" verb="*" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" validate="false"/>
+      <remove verb="*" path="*.asmx"/>
+      <add verb="*" path="*.asmx" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add verb="*" path="*_AppService.axd" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" validate="false"/>
+    </httpHandlers>
+    <compilation debug="true">
+      <buildProviders>
+        <add extension=".rdlc" type="Microsoft.Reporting.RdlBuildProvider, Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+      </buildProviders>
+      <assemblies>
+        <add assembly="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Messaging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Configuration.Install, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+      </assemblies>
+    </compilation>
+    <roleManager enabled="true" defaultProvider="ZNodeRoleProvider">
+      <providers>
+        <clear/>
+        <add name="ZNodeRoleProvider" connectionStringName="ZNodeECommerceDB" applicationName="ZNodeECommerce" type="System.Web.Security.SqlRoleProvider, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+      </providers>
+    </roleManager>
+    <membership defaultProvider="ZNodeMembershipProvider">
+      <providers>
+        <add name="ZNodeMembershipProvider" type="System.Web.Security.SqlMembershipProvider" connectionStringName="ZNodeECommerceDB" applicationName="ZNodeECommerce" minRequiredPasswordLength="5" minRequiredNonalphanumericCharacters="0" enablePasswordReset="true" requiresQuestionAndAnswer="true" requiresUniqueEmail="false" maxInvalidPasswordAttempts="999" passwordAttemptWindow="10"/>
+      </providers>
+    </membership>
+    <siteMap defaultProvider="ZNodeSiteMap" enabled="true">
+      <providers>
+        <add name="ZNodeSiteMap" description="" type="System.Web.XmlSiteMapProvider" securityTrimmingEnabled="true" siteMapFile="web.sitemap"/>
+        <add name="ZNodeAdminSiteMap" description="" type="System.Web.XmlSiteMapProvider" securityTrimmingEnabled="true" siteMapFile="~/admin/web.sitemap"/>
+      </providers>
+    </siteMap>
+    <urlMappings enabled="true">
+      <add url="~/314.aspx" mappedUrl="~/product999.aspx"/>
+    </urlMappings>
+    <authentication mode="Forms"/>
+    <trace enabled="false"/>
+		<customErrors mode="Off" defaultRedirect="error.aspx" >
+			<error statusCode="404" redirect="404.aspx" />
+		</customErrors>
+    <!--WISEMETA: impersonate="[ZNODE_IMPERSONATE]" userName="[MYUSERNAME]" password="[MYPASSWORD]"-->
+    <identity impersonate="false" userName="" password=""/>
+  </system.web>
+  <location path="account.aspx">
+    <system.web>
+      <authorization>
+        <deny users="?"/>
+        <allow users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="address.aspx">
+    <system.web>
+      <authorization>
+        <deny users="?"/>
+        <allow users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="ChangePassword.aspx">
+    <system.web>
+      <authorization>
+        <deny users="?"/>
+        <allow users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Checkout.aspx">
+    <system.web>
+      <authorization>
+        <deny users="?"/>
+        <allow users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Order.aspx">
+    <system.web>
+      <authorization>
+        <deny users="?"/>
+        <allow users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="secure.aspx">
+    <system.web>
+      <authorization>
+        <deny users="?"/>
+        <allow users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <appSettings>
+    <add key="DisplayDetailedErrorMessage" value="1"/>
+
+    <!-- Google Custom Search Business Edition Custom Search Engine ID  -->
+    <add key="GOOGLE_CSE_ACCOUNT_ID" value="003383092234438928583:jqu5tkrevxc" />
+
+    <!-- Google Custom Search Engine URL -->
+    <add key="GOOGLE_CSE_URL" value="http://www.google.com/cse?cx=007326430375486862768:1p3_g6kufle&amp;ie=UTF-I&amp;q=" />
+
+    <!-- Site Map Root ContentPage ID (typically the home page) -->
+    <add key="ROOT_CONTENTPAGEID" value="15" />
+
+    <!-- File name of the trial downloadable -->
+    <add key="TRIAL_DOWNLOAD_FILENAME" value="dummy.exe" />
+
+    <!-- File name of the upgrade downloadable -->
+    <add key="UPGRADE_DOWNLOAD_FILENAME" value="upgradedummy.exe" />
+
+    <!-- Category IDs for Product section -->
+    <add key="FILE_BY_FILE_PAGE_ID" value="65" />
+    <add key="FILE_BY_FILE_CATEGORY_ID" value="90" />
+    <add key="BARE_METAL_DISASTER_RECOVERY_CATEGORY_ID" value="91" />    
+    <add key="SMALL_BUSINESS_SOLUTIONS_CATEGORY_ID" value="98" />    
+    <add key="MEDIUM_BUSINESS_SOLUTIONS_CATEGORY_ID" value="99" />
+    <add key="ENTERPRISE_SOLUTIONS_CATEGORY_ID" value="100" />
+    <add key="FEATURED_PRODUCT_CATEGORY_ID" value="101" />
+    <add key="IS_DOWNLOADABLE_CATEGORY_ID" value="102" />
+    <add key="IS_UPGRADEABLE_CATEGORY_ID" value="103" />
+
+		<add key="BaseProductsCategory" value="106" />
+		<add key="BundlesProductCategory" value="107" />
+		<add key="AddonsCategory" value="108" />
+
+    <!-- Image Backup and Bare Metal Disaster Recovery page -->
+    <add key="BARE_METAL_DISASTER_RECOVERY_PAGE_ID" value="66" />
+
+    <!-- Reseller login page -->
+    <add key="RESELLER_LOGIN_URL" value="~/resellerlogin.aspx" />
+
+    <!-- White papers parent id -->
+    <add key="WHITE_PAPERS_PAGE_ID" value="52" />
+
+    <!-- Product News Page node id -->
+    <add key="PRODUCT_NEWS_PAGE_ID" value="39" />
+
+    <!-- Small Business Solutions page -->
+    <add key="SMALL_BUSINESS_SOLUTIONS_PAGE_ID" value="67" />
+
+    <!-- Medium Business Solutions page -->
+    <add key="MEDIUM_BUSINESS_SOLUTIONS_PAGE_ID" value="68" />
+
+    <!-- Enterprise Solutions page -->
+    <add key="ENTERPRISE_BUSINESS_SOLUTIONS_PAGE_ID" value="69" />
+    
+    <!-- Reseller password -->
+    <add key="RESELLER_PASSWORD" value="p4ss" />
+		
+  </appSettings>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false"/>
+    <modules>
+      <add name="ScriptModule" preCondition="integratedMode" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+    </modules>
+    <handlers>
+      <remove name="WebServiceHandlerFactory-Integrated"/>
+      <add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+    </handlers>
+    <defaultDocument>
+      <files>
+        <clear/>
+        <add value="default.aspx"/>
+        <add value="Default.htm"/>
+        <add value="Default.asp"/>
+        <add value="index.htm"/>
+        <add value="index.html"/>
+        <add value="iisstart.htm"/>
+      </files>
+    </defaultDocument>
+  </system.webServer>
+</configuration>

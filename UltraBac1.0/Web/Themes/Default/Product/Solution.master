@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" AutoEventWireup="true" CodeFile="Solution.master.cs" Inherits="Themes_Default_Solution" %>
+<%@ MasterType VirtualPath="~/Themes/Default/Common/main.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadPlaceHolder" runat="server">
+
+	<asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server" />
+	
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+	
+	<POP:NavLeftSidebar ID="uxNavLeftSidebar" runat="server" />
+	
+		<div id="Content">
+			<ZNode:Content ID="uxContent" runat="server"  Visible="true"/>
+			<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+			<!-- product list -->
+            <div class="flexBucket">
+                <div class="flexBucket-top">
+                    <div class="flexBucket-top-left"><h2>Products</h2></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="flexBucket-mid">
+                    <div class="flexBucket-content">
+		                <asp:Repeater ID="uxProducts" runat="server" OnItemDataBound="UxProducts_ItemDataBound">
+		                    <ItemTemplate>
+                                <a id="uxProductLink" runat="server" class="floatnone actionButton clearboth">
+                                    <span class="actionButton-right actionButtons-long">
+                                        <span class="actionButton-left">
+                                            <asp:Literal ID="uxProduct" runat="server"></asp:Literal>
+                                        </span>
+                                    </span>
+                                </a>
+		                    </ItemTemplate>
+		                </asp:Repeater>
+		            </div>
+		            <div class="clear"></div>
+		        </div>
+                <div class="flexBucket-bot">
+	                <div class="flexBucket-bot-left"></div>
+                </div>
+            </div>
+            
+            <%-- Case Studies 
+            <div class="flexBucket floatright flex-twoColumn">
+                <div class="flexBucket-top">
+	                <div class="flexBucket-top-left"><h3>Case Study</h3></div>
+	                <div class="clear"></div>
+                </div>
+
+                <div class="flexBucket-mid">
+                    <div class="flexBucket-content">
+                    Lorem Ipsum
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="flexBucket-bot">
+	                <div class="flexBucket-bot-left"></div>
+                </div>
+            </div><!-- end of flex box --%>
+            
+            <div class="clear"></div>
+            
+            <!-- White Papers -->
+           <%-- <div class="flexBucket">
+                <div class="flexBucket-top">
+	                <div class="flexBucket-top-left"><h3>White Papers</h3></div>
+	                <div class="clear"></div>
+                </div>
+
+                <div class="flexBucket-mid">
+                    <div class="flexBucket-content">
+                        <asp:Repeater runat="server" ID="uxWhitePapers">
+                        <HeaderTemplate>
+                            <ul class="bullet bulletFlush">
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <li>
+                                <a href="<%# ResolveUrl(Eval("LinkPath").ToString()) %>"><%# Eval("LinkText") %></a>
+                            </li>                        
+                        </ItemTemplate>	                        
+                        <FooterTemplate>
+                            </ul>
+                        </FooterTemplate>
+                        </asp:Repeater>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="flexBucket-bot">
+	                <div class="flexBucket-bot-left"></div>
+                </div>
+            </div><!-- end of flex box -->--%>
+
+		<!-- /Content --></div>
+		
+		<asp:ContentPlaceHolder ID="RightColumn" runat="server" />
+  
+  <POP:RightSidebar ID="uxRightSidebar" runat="server" />
+</asp:Content>

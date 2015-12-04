@@ -1,0 +1,19 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="../common/main.master" %>
+<%@ Register Src="price.ascx" TagName="Price" TagPrefix="ZNode" %>
+<%@ Register Src="../category/navigationcategories.ascx" TagName="NavigationCategories" TagPrefix="ZNode" %>
+<%@ Register Src="../specials/navigationspecials.ascx" TagName="NavigationSpecials" TagPrefix="ZNode" %>
+<%@ Register Src="../common/QuickSearch.ascx" TagName="QuickSearch" TagPrefix="ZNode" %>
+<%@ Register Src="../navigation/NavigationBreadCrumbs.ascx" TagName="StoreBreadCrumbs" TagPrefix="ZNode" %>
+<%@ Register Src="../brand/navigationbrand.ascx" TagName="NavigationBrand" TagPrefix="ZNode" %>
+<%@ Register Src="../price/navigationprice.ascx" TagName="NavigationPrice" TagPrefix="ZNode" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+
+<ZNode:NavigationCategories ID="CATEGORIES" runat="server"></ZNode:NavigationCategories>
+<ZNode:NavigationBrand ID="BRAND" runat="server"></ZNode:NavigationBrand>
+<ZNode:NavigationPrice ID="PRICE" runat="server"></ZNode:NavigationPrice>
+<ZNode:NavigationSpecials ID="SPECIALS" runat="server"></ZNode:NavigationSpecials>
+<ZNode:StoreBreadCrumbs ID="BREAD_CRUMBS" runat="server"></ZNode:StoreBreadCrumbs>
+<ZNode:QuickSearch ID="QUICK_SEARCH" runat="server"></ZNode:QuickSearch>
+<ZNode:Price ID="uxPrice" runat="server"  Visible="true"/>
+</asp:Content>

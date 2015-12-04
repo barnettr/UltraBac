@@ -1,0 +1,1021 @@
+----------------------------------------
+Timestamp: 11/20/2007 1:24:19 AM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 11/20/2007 1:24:19 AM
+Message: HandlingInstanceID: 053cae3e-12cb-4982-b3e3-0534a2de5356
+<Exception>
+  <Description>An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.</Description>
+  <DateTime>2007-11-19 17:24:19Z</DateTime>
+  <ExceptionType>System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)</Message>
+  <Source>.Net SqlClient Data Provider</Source>
+  <HelpLink />
+  <Property name="Errors">System.Data.SqlClient.SqlErrorCollection</Property>
+  <Property name="Class">20</Property>
+  <Property name="LineNumber">0</Property>
+  <Property name="Number">233</Property>
+  <Property name="Procedure">&lt;undefined value&gt;</Property>
+  <Property name="Server">LOCALHOST\SQLEXPRESS</Property>
+  <Property name="State">0</Property>
+  <Property name="ErrorCode">-2146232060</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void OnError(System.Data.SqlClient.SqlException, Boolean)</Property>
+  <StackTrace>   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadPacket(Int32 bytesExpected)
+   at System.Data.SqlClient.TdsParserStateObject.ReadBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at ZNode.Libraries.DataAccess.Data.Utility.ExecuteReader(Database database, DbCommand dbCommand) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data\Utility.cs:line 357
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 712
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="SPENCERS" />
+    <info name="TimeStamp" value="11/20/2007 1:24:19 AM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/Root/Ultrabac-2-128399954396699503" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="SPENCERS\ASPNET" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: SPENCERS
+App Domain: /LM/W3SVC/1/Root/Ultrabac-2-128399954396699503
+ProcessId: 3532
+Process Name: c:\windows\microsoft.net\framework\v2.0.50727\aspnet_wp.exe
+Thread Name: 
+Win32 ThreadId:3732
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 233
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+--> MachineName: SPENCERS
+--> TimeStamp: 11/20/2007 1:24:19 AM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/Root/Ultrabac-2-128399954396699503
+--> WindowsIdentity: SPENCERS\ASPNET
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 11/20/2007 1:24:34 AM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 11/20/2007 1:24:34 AM
+Message: HandlingInstanceID: c586dd05-c21c-4c8a-b96d-1338bb3335b7
+<Exception>
+  <Description>An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.</Description>
+  <DateTime>2007-11-19 17:24:34Z</DateTime>
+  <ExceptionType>System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>Login failed for user 'znodeuser'. The user is not associated with a trusted SQL Server connection.</Message>
+  <Source>.Net SqlClient Data Provider</Source>
+  <HelpLink />
+  <Property name="Errors">System.Data.SqlClient.SqlErrorCollection</Property>
+  <Property name="Class">14</Property>
+  <Property name="LineNumber">65536</Property>
+  <Property name="Number">18452</Property>
+  <Property name="Procedure" />
+  <Property name="Server">LOCALHOST\SQLEXPRESS</Property>
+  <Property name="State">1</Property>
+  <Property name="ErrorCode">-2146232060</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void OnError(System.Data.SqlClient.SqlException, Boolean)</Property>
+  <StackTrace>   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at ZNode.Libraries.DataAccess.Data.Utility.ExecuteReader(Database database, DbCommand dbCommand) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data\Utility.cs:line 357
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 712
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="SPENCERS" />
+    <info name="TimeStamp" value="11/20/2007 1:24:34 AM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/Root/Ultrabac-2-128399954396699503" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="SPENCERS\ASPNET" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: SPENCERS
+App Domain: /LM/W3SVC/1/Root/Ultrabac-2-128399954396699503
+ProcessId: 3532
+Process Name: c:\windows\microsoft.net\framework\v2.0.50727\aspnet_wp.exe
+Thread Name: 
+Win32 ThreadId:3732
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 18452
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+--> MachineName: SPENCERS
+--> TimeStamp: 11/20/2007 1:24:34 AM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/Root/Ultrabac-2-128399954396699503
+--> WindowsIdentity: SPENCERS\ASPNET
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 2/18/2008 7:27:40 PM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 2/18/2008 7:27:39 PM
+Message: HandlingInstanceID: 160de684-ae2b-4427-9355-cc42c7fa31a5
+<Exception>
+  <Description>An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.</Description>
+  <DateTime>2008-02-18 11:27:39Z</DateTime>
+  <ExceptionType>System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>Login failed for user 'znodeuser'. The user is not associated with a trusted SQL Server connection.</Message>
+  <Source>.Net SqlClient Data Provider</Source>
+  <HelpLink />
+  <Property name="Errors">System.Data.SqlClient.SqlErrorCollection</Property>
+  <Property name="Class">14</Property>
+  <Property name="LineNumber">65536</Property>
+  <Property name="Number">18452</Property>
+  <Property name="Procedure" />
+  <Property name="Server">LOCALHOST\SQLEXPRESS</Property>
+  <Property name="State">1</Property>
+  <Property name="ErrorCode">-2146232060</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void OnError(System.Data.SqlClient.SqlException, Boolean)</Property>
+  <StackTrace>   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at ZNode.Libraries.DataAccess.Data.Utility.ExecuteReader(Database database, DbCommand dbCommand) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data\Utility.cs:line 357
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 712
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="SPENCERS" />
+    <info name="TimeStamp" value="2/18/2008 7:27:39 PM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/Root/Ultrabac-3-128478364394408906" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="SPENCERS\ASPNET" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: SPENCERS
+App Domain: /LM/W3SVC/1/Root/Ultrabac-3-128478364394408906
+ProcessId: 2724
+Process Name: C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_wp.exe
+Thread Name: 
+Win32 ThreadId:3392
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 18452
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+--> MachineName: SPENCERS
+--> TimeStamp: 2/18/2008 7:27:40 PM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/Root/Ultrabac-3-128478364394408906
+--> WindowsIdentity: SPENCERS\ASPNET
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 2/18/2008 10:13:29 PM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 2/18/2008 10:13:29 PM
+Message: HandlingInstanceID: e7672a8e-754c-4282-bc47-8849c47faede
+<Exception>
+  <Description>An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.</Description>
+  <DateTime>2008-02-18 14:13:29Z</DateTime>
+  <ExceptionType>System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>Login failed for user 'znodeuser'. The user is not associated with a trusted SQL Server connection.</Message>
+  <Source>.Net SqlClient Data Provider</Source>
+  <HelpLink />
+  <Property name="Errors">System.Data.SqlClient.SqlErrorCollection</Property>
+  <Property name="Class">14</Property>
+  <Property name="LineNumber">65536</Property>
+  <Property name="Number">18452</Property>
+  <Property name="Procedure" />
+  <Property name="Server">LOCALHOST\SQLEXPRESS</Property>
+  <Property name="State">1</Property>
+  <Property name="ErrorCode">-2146232060</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void OnError(System.Data.SqlClient.SqlException, Boolean)</Property>
+  <StackTrace>   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at ZNode.Libraries.DataAccess.Data.Utility.ExecuteReader(Database database, DbCommand dbCommand) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data\Utility.cs:line 357
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 712
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="SPENCERS" />
+    <info name="TimeStamp" value="2/18/2008 10:13:29 PM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/Root/Ultrabac-3-128478364394408906" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="SPENCERS\ASPNET" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: SPENCERS
+App Domain: /LM/W3SVC/1/Root/Ultrabac-3-128478364394408906
+ProcessId: 2724
+Process Name: C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_wp.exe
+Thread Name: 
+Win32 ThreadId:3392
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 18452
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+--> MachineName: SPENCERS
+--> TimeStamp: 2/18/2008 10:13:29 PM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/Root/Ultrabac-3-128478364394408906
+--> WindowsIdentity: SPENCERS\ASPNET
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 2/18/2008 10:15:00 PM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 2/18/2008 10:15:00 PM
+Message: HandlingInstanceID: 2c1863ad-38d5-4257-a5f0-d0d909ff20a6
+<Exception>
+  <Description>An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.</Description>
+  <DateTime>2008-02-18 14:14:58Z</DateTime>
+  <ExceptionType>System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)</Message>
+  <Source>.Net SqlClient Data Provider</Source>
+  <HelpLink />
+  <Property name="Errors">System.Data.SqlClient.SqlErrorCollection</Property>
+  <Property name="Class">20</Property>
+  <Property name="LineNumber">0</Property>
+  <Property name="Number">233</Property>
+  <Property name="Procedure">&lt;undefined value&gt;</Property>
+  <Property name="Server">LOCALHOST\SQLEXPRESS</Property>
+  <Property name="State">0</Property>
+  <Property name="ErrorCode">-2146232060</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void OnError(System.Data.SqlClient.SqlException, Boolean)</Property>
+  <StackTrace>   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadPacket(Int32 bytesExpected)
+   at System.Data.SqlClient.TdsParserStateObject.ReadBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at ZNode.Libraries.DataAccess.Data.Utility.ExecuteReader(Database database, DbCommand dbCommand) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data\Utility.cs:line 357
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 712
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="SPENCERS" />
+    <info name="TimeStamp" value="2/18/2008 10:14:59 PM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/Root/Ultrabac-5-128478464492334927" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="SPENCERS\ASPNET" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: SPENCERS
+App Domain: /LM/W3SVC/1/Root/Ultrabac-5-128478464492334927
+ProcessId: 2724
+Process Name: C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_wp.exe
+Thread Name: 
+Win32 ThreadId:3392
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 233
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+--> MachineName: SPENCERS
+--> TimeStamp: 2/18/2008 10:15:00 PM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/Root/Ultrabac-5-128478464492334927
+--> WindowsIdentity: SPENCERS\ASPNET
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 2/19/2008 6:05:27 PM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 2/19/2008 6:05:27 PM
+Message: HandlingInstanceID: 64e09820-75ad-4f73-9991-534dc75645d7
+<Exception>
+  <Description>An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.</Description>
+  <DateTime>2008-02-19 10:05:27Z</DateTime>
+  <ExceptionType>System.Data.SqlClient.SqlException, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>An error has occurred while establishing a connection to the server.  When connecting to SQL Server 2005, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</Message>
+  <Source>.Net SqlClient Data Provider</Source>
+  <HelpLink />
+  <Property name="Errors">System.Data.SqlClient.SqlErrorCollection</Property>
+  <Property name="Class">20</Property>
+  <Property name="LineNumber">0</Property>
+  <Property name="Number">53</Property>
+  <Property name="Procedure">&lt;undefined value&gt;</Property>
+  <Property name="Server" />
+  <Property name="State">0</Property>
+  <Property name="ErrorCode">-2146232060</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void OnError(System.Data.SqlClient.SqlException, Boolean)</Property>
+  <StackTrace>   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at ZNode.Libraries.DataAccess.Data.Utility.ExecuteReader(Database database, DbCommand dbCommand) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data\Utility.cs:line 357
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 712
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="SPENCERS" />
+    <info name="TimeStamp" value="2/19/2008 6:05:27 PM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/Root/Ultrabacweb-60-128479178943945302" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="SPENCERS\ASPNET" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: SPENCERS
+App Domain: /LM/W3SVC/1/Root/Ultrabacweb-60-128479178943945302
+ProcessId: 2724
+Process Name: C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\aspnet_wp.exe
+Thread Name: 
+Win32 ThreadId:3392
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 53
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+--> MachineName: SPENCERS
+--> TimeStamp: 2/19/2008 6:05:27 PM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/Root/Ultrabacweb-60-128479178943945302
+--> WindowsIdentity: SPENCERS\ASPNET
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2008 12:21:15 AM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 2/26/2008 12:21:14 AM
+Message: HandlingInstanceID: 4a3f8b79-89e3-43d9-b498-cfb890737aca
+<Exception>
+  <Description>An exception of type 'System.ArgumentException' occurred and was caught.</Description>
+  <DateTime>2008-02-25 16:21:12Z</DateTime>
+  <ExceptionType>System.ArgumentException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>An item with the same key has already been added.</Message>
+  <Source>mscorlib</Source>
+  <HelpLink />
+  <Property name="ParamName">&lt;undefined value&gt;</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void ThrowArgumentException(System.ExceptionResource)</Property>
+  <StackTrace>   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Microsoft.Practices.ObjectBuilder.WeakRefDictionary`2.Add(TKey key, TValue value)
+   at Microsoft.Practices.ObjectBuilder.Locator.Add(Object key, Object value)
+   at ZNode.Libraries.DataAccess.Entities.EntityLocator.Add(String key, Object value) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Entities\EntityLocator.cs:line 32
+   at ZNode.Libraries.DataAccess.Entities.EntityManager.StartTracking(String key, IEntity entity, Boolean isTrackingEnabled) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Entities\EntityManager.cs:line 197
+   at ZNode.Libraries.DataAccess.Entities.EntityManager.LocateOrCreate[Entity](String key, String typeString, Type entityFactoryType, Boolean isLocatorEnabled) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Entities\EntityManager.cs:line 95
+   at ZNode.Libraries.DataAccess.Data.Bases.PortalProviderBaseCore.Fill(IDataReader reader, TList`1 rows, Int32 start, Int32 pageLength) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data\Bases\PortalProviderBaseCore.generated.cs:line 276
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 716
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\Ultrabac\UltraBacWeb\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="SPENCERS" />
+    <info name="TimeStamp" value="2/26/2008 12:21:14 AM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/Root/Ultrabac-4-128484588523693275" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="SPENCERS\ASPNET" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: SPENCERS
+App Domain: /LM/W3SVC/1/Root/Ultrabac-4-128484588523693275
+ProcessId: 3644
+Process Name: c:\windows\microsoft.net\framework\v2.0.50727\aspnet_wp.exe
+Thread Name: 
+Win32 ThreadId:496
+Extended Properties: 
+--> MachineName: SPENCERS
+--> TimeStamp: 2/26/2008 12:21:15 AM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/Root/Ultrabac-4-128484588523693275
+--> WindowsIdentity: SPENCERS\ASPNET
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 9/17/2009 10:22:23 PM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 9/17/2009 10:22:23 PM
+Message: HandlingInstanceID: 53db0466-ed62-466d-b299-9cb58ce4aeff
+<Exception>
+  <Description>An exception of type 'System.ArgumentException' occurred and was caught.</Description>
+  <DateTime>2009-09-17 15:22:22Z</DateTime>
+  <ExceptionType>System.ArgumentException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>An item with the same key has already been added.</Message>
+  <Source>mscorlib</Source>
+  <HelpLink />
+  <Property name="ParamName">&lt;undefined value&gt;</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void ThrowArgumentException(System.ExceptionResource)</Property>
+  <StackTrace>   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at ZNode.Libraries.DataAccess.Entities.EntityFactoryBase.CoreCreate(Type type) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Entities\EntityFactoryBase.cs:line 275
+   at ZNode.Libraries.DataAccess.Entities.EntityFactoryBase.CoreCreate(String typeString, Type defaultType) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Entities\EntityFactoryBase.cs:line 261
+   at ZNode.Libraries.DataAccess.Entities.EntityFactoryBase.Create(String typeString, Type defaultType) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Entities\EntityFactoryBase.cs:line 189
+   at ZNode.Libraries.DataAccess.Entities.EntityFactoryBase.CreateEntity(String typeString, Type defaultType) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Entities\EntityFactoryBase.cs:line 130
+   at ZNode.Libraries.DataAccess.Entities.EntityManager.LocateOrCreate[Entity](String key, String typeString, Type entityFactoryType, Boolean isLocatorEnabled) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Entities\EntityManager.cs:line 91
+   at ZNode.Libraries.DataAccess.Data.Bases.PortalProviderBaseCore.Fill(IDataReader reader, TList`1 rows, Int32 start, Int32 pageLength) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\Bases\PortalProviderBaseCore.generated.cs:line 276
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlPortalProviderBase.GetByPortalID(TransactionManager transactionManager, Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlPortalProviderBase.generated.cs:line 716
+   at ZNode.Libraries.DataAccess.Service.PortalServiceBase.GetByPortalID(Int32 portalID, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Service\PortalServiceBase.generated.cs:line 210</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="PC2-PETERB" />
+    <info name="TimeStamp" value="9/17/2009 10:22:23 PM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/ROOT/ultrabac-1-128976997353347922" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="NT AUTHORITY\NETWORK SERVICE" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: PC2-PETERB
+App Domain: /LM/W3SVC/1/ROOT/ultrabac-1-128976997353347922
+ProcessId: 4840
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:3800
+Extended Properties: 
+--> MachineName: PC2-PETERB
+--> TimeStamp: 9/17/2009 10:22:23 PM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/ROOT/ultrabac-1-128976997353347922
+--> WindowsIdentity: NT AUTHORITY\NETWORK SERVICE
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------
+----------------------------------------
+Timestamp: 9/21/2009 10:19:20 PM
+Message: Tracing to LogSource 'Exceptions' failed. Processing for other sources will continue. See summary information below for more information. Should this problem persist, stop the service and check the configuration file(s) for possible error(s) in the configuration of the categories and sinks.
+
+
+Summary for Enterprise Library Distributor Service:
+======================================
+--> 
+Message: 
+Timestamp: 9/21/2009 10:19:19 PM
+Message: HandlingInstanceID: 04e224ca-886d-4405-a51f-58275f8228d4
+<Exception>
+  <Description>An exception of type 'System.ArgumentException' occurred and was caught.</Description>
+  <DateTime>2009-09-21 15:19:19Z</DateTime>
+  <ExceptionType>System.ArgumentException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>An item with the same key has already been added.</Message>
+  <Source>mscorlib</Source>
+  <HelpLink />
+  <Property name="ParamName">&lt;undefined value&gt;</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void ThrowArgumentException(System.ExceptionResource)</Property>
+  <StackTrace>   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Microsoft.Practices.ObjectBuilder.WeakRefDictionary`2.Add(TKey key, TValue value)
+   at Microsoft.Practices.ObjectBuilder.Locator.Add(Object key, Object value)
+   at ZNode.Libraries.DataAccess.Entities.EntityManager.StartTracking(String key, IEntity entity, Boolean isTrackingEnabled) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Entities\EntityManager.cs:line 195
+   at ZNode.Libraries.DataAccess.Entities.EntityManager.LocateOrCreate[Entity](String key, String typeString, Type entityFactoryType, Boolean isLocatorEnabled) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Entities\EntityManager.cs:line 95
+   at ZNode.Libraries.DataAccess.Data.Bases.ContentPageProviderBaseCore.Fill(IDataReader reader, TList`1 rows, Int32 start, Int32 pageLength) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\Bases\ContentPageProviderBaseCore.generated.cs:line 361
+   at ZNode.Libraries.DataAccess.Data.SqlClient.SqlContentPageProviderBase.GetByName(TransactionManager transactionManager, String name, Int32 start, Int32 pageLength, Int32&amp; count) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data.SqlClient\SqlContentPageProviderBase.generated.cs:line 682
+   at ZNode.Libraries.DataAccess.Service.ContentPageServiceBase.GetByName(String name, Int32 start, Int32 pageLength, Int32&amp; totalCount) in C:\projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Service\ContentPageServiceBase.generated.cs:line 278</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="PC2-PETERB" />
+    <info name="TimeStamp" value="9/21/2009 10:19:19 PM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/ROOT/ultrabac-4-128980451448965143" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="NT AUTHORITY\NETWORK SERVICE" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:ZNode.Libraries.DataAccess Exception Handling
+Machine: PC2-PETERB
+App Domain: /LM/W3SVC/1/ROOT/ultrabac-4-128980451448965143
+ProcessId: 6264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:2828
+Extended Properties: 
+--> MachineName: PC2-PETERB
+--> TimeStamp: 9/21/2009 10:19:20 PM
+--> FullName: Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+--> AppDomainName: /LM/W3SVC/1/ROOT/ultrabac-4-128980451448965143
+--> WindowsIdentity: NT AUTHORITY\NETWORK SERVICE
+
+Exception Information Details:
+======================================
+Exception Type: System.Security.SecurityException
+Action: 0
+PermissionType: NULL
+FirstPermissionThatFailed: NULL
+PermissionState: NULL
+Demanded: NULL
+GrantedSet: NULL
+RefusedSet: NULL
+DenySetInstance: NULL
+PermitOnlySetInstance: NULL
+FailedAssemblyInfo: NULL
+Method: NULL
+Zone: MyComputer
+Url: NULL
+Message: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+Data: System.Collections.ListDictionaryInternal
+TargetSite: Microsoft.Win32.RegistryKey FindSourceRegistration(System.String, System.String, Boolean)
+HelpLink: NULL
+Source: System
+
+StackTrace Information Details: 
+======================================
+   at System.Diagnostics.EventLog.FindSourceRegistration(String source, String machineName, Boolean readOnly)
+   at System.Diagnostics.EventLog.SourceExists(String source, String machineName)
+   at System.Diagnostics.EventLog.VerifyAndCreateSource(String sourceName, String currentMachineName)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+   at System.Diagnostics.EventLogTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTraceListenerWrapperBase.TraceData(TraceEventCache eventCache, String source, TraceEventType severity, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)
+Category: 
+Priority: -1
+EventId: 6352
+Severity: Error
+Title:
+----------------------------------------

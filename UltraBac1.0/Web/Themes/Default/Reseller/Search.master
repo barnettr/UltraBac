@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" AutoEventWireup="true" CodeFile="Search.master.cs" Inherits="Themes_Default_Reseller_Search" %>
+<%@ MasterType VirtualPath="~/Themes/Default/Common/main.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadPlaceHolder" runat="server">
+
+	<asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server" />
+	
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+	
+	<POP:NavLeftSidebar ID="uxNavLeftSidebar" runat="server" />
+	
+		<div id="Content">
+			
+			<ZNode:Content ID="uxContent" runat="server"  Visible="true"/>
+			<div class="resellerSearch-columns">	
+			    <h2><span class="hide">search resellers </span>By Continent</h2>
+			    <asp:DropDownList ID="uxRegion" runat="server" AutoPostBack="true" OnSelectedIndexChanged="uxRegion_SelectedIndexChanged" >
+			    </asp:DropDownList>
+			    <asp:Button runat="server" Text="submit" />
+    		</div>	
+    		<div id="resellerSearch-divider">and</div>
+    		<div class="resellerSearch-columns">
+    		    <h2><span class="hide">search resellers </span>By Country</h2>
+			    <asp:DropDownList ID="uxCountry" runat="server" AutoPostBack="true" OnSelectedIndexChanged="uxCountry_SelectedIndexChanged" >			        
+			    </asp:DropDownList>
+			    <asp:Button ID="Button1" runat="server" Text="submit" />
+			</div>
+			<div class="clear"></div>
+			<asp:Repeater runat="server" ID="uxResellers" OnItemDataBound="uxResellers_ItemDataBound">
+			   
+			    <ItemTemplate>
+			    
+			    <div class="hr"></div>
+			    
+			    <div>
+			    <h3 class="reseller"><%# GetColumnTextOrEmpty(Container.DataItem, "DealerName") %></h3>
+			    
+			 
+			    
+			    <div class="resellerData">
+			    </div>
+			    
+			    <div class="resellerLabel">
+			        <p class='bold'>Contact<%# FormatTextOrEmpty(Container.DataItem, "s", true, "DealerContact2")%>:</p>
+			    </div>
+			    
+			    <div class="resellerData">
+			        <%# GetColumnTextOrEmpty(Container.DataItem, "DealerContact") %>
+    		        <%# FormatTextOrEmpty(Container.DataItem, "<br />{0}", true, "DealerContact2")%>
+    		        <%# FormatTextOrEmpty(Container.DataItem, "<br />{0}", true, "DealerContact3")%>
+    		        &nbsp;
+			    </div>
+			    
+			    <div class="clear"></div>
+			    
+			    <div class="resellerLabel">
+			        <p class='bold'>Address:</p>
+			    </div>
+			    
+			    <div class="resellerData">
+			        <%# GetColumnTextOrEmpty(Container.DataItem, "DealerAddress1") %><br />
+			        <%# FormatTextOrEmpty(Container.DataItem, "{0}<br />", true, "DealerAddress2")%>
+		            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerCity") %>, 
+		            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerState") %> 
+		            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerZip") %>
+		            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerCountry")%>
+			    </div>
+    		    
+			    <div class="clear"></div>
+
+			  <asp:PlaceHolder runat="server" ID="uxMailingAddressTemplate">
+			  
+			    <div class="resellerLabel">
+			    <p class='bold'>Mailing Address</p>
+			    </div>
+			    
+			    <div class="resellerData">
+			    <%# GetColumnTextOrEmpty(Container.DataItem, "DealerMailingAddress1") %>
+	            <%# FormatTextOrEmpty(Container.DataItem, "{0}<br />", true, "DealerMailingAddress2")%>
+	            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerMailingCity")%>, 
+	            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerMailingState")%> 
+	            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerMailingZip")%>
+	            <%# GetColumnTextOrEmpty(Container.DataItem, "DealerCountry")%>
+	            <div class="clear"></div>
+			    </div>
+
+	            <div class="clear"></div>
+			  </asp:PlaceHolder>	       
+  
+                <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerLabel\"><p class=\'bold\'>Phone:</p></div><div class=\"resellerData\">{0}</div><div class=\"clear\"> </div>", true, "DealerPhone")%>
+                <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerLabel\"><p class=\'bold\'>Direct:</p></div><div class=\"resellerData\">{0}</div><div class=\"clear\"> </div>", true, "DealerPhoneDirect")%>
+                <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerLabel\"><p class=\'bold\'>Toll Free:</p></div><div class=\"resellerData\">{0}</div><div class=\"clear\"> </div>", true, "DealerPhoneTollFree")%>
+                <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerLabel\"><p class=\'bold\'>Mobile:</p></div><div class=\"resellerData\">{0}</div><div class=\"clear\"> </div>", true, "DealerPhoneMobile")%>
+                <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerLabel\"><p class=\'bold\'>Fax:</p></div><div class=\"resellerData\">{0}</div><div class=\"clear\"> </div>", true, "DealerFax")%>
+
+
+		        <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerLabel\"><p class=\'bold\'>Email:</p></div>", true, "DealerEmail")%>
+		        <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerData\"><a href=\"mailto:{0}\">{0}</a>", true, "DealerEmail")%>
+        	        <%# FormatTextOrEmpty(Container.DataItem, "<a href=\"mailto:{0}\">{0}</a>", true, "DealerEmail2")%>
+        	        <%# FormatTextOrEmpty(Container.DataItem, "<a href=\"mailto:{0}\">{0}</a>", true, "DealerEmail3")%>
+	            <%# FormatTextOrEmpty(Container.DataItem, "</div><div class=\"clear\"> </div>", true, "DealerEmail")%>
+    	        
+                <%# FormatTextOrEmpty(Container.DataItem, "<div class=\"resellerLabel\"><p class='bold'>Web:</p></div><div class=\"resellerData\"><a target=\"_blank\" href=\"{0}\">{0}</a></div><div class=\"clear\"> </div>", true, "DealerUrl")%>
+	            
+			    
+			    
+			    </div>
+			    </ItemTemplate>
+			    <FooterTemplate>
+			    <div class="hr"></div>
+			    </FooterTemplate>
+			    
+			</asp:Repeater>
+	
+		<!-- /Content --></div>
+		
+		<asp:ContentPlaceHolder ID="RightColumn" runat="server" />
+  
+  <POP:RightSidebar ID="uxRightSidebar" runat="server" />
+</asp:Content>

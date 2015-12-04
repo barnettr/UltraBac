@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>CVV Code</title>
+	</head>
+	<body link="#7698aa" vLink="#808080" aLink="#7698aa" style="font-family:Verdana">
+		<br />
+		<table>
+			<tr>
+				<td>
+					<TABLE ALIGN="center" width="100%" CELLSPACING="0" BORDER="0" CELLPADDING="0" BGCOLOR="#cccccc">
+						<TR>
+							<TD colspan="2">
+								<IMG src="../images/accents/pixel.gif" width="1" height="1" border="0"></TD>
+						</TR>
+						<TR>
+							<TD align="left" BGCOLOR="#eeeeee" colspan="1">&nbsp;&nbsp;&nbsp; <font color="#3b4455" size="+1">
+									Card Security Code Explanation</font>
+							</TD>
+							<TD align="right" BGCOLOR="#eeeeee" colspan="1"><a href="javascript:window.close();">Close 
+									Window</a>&nbsp; &nbsp;</TD>
+						</TR>
+						<TR>
+							<TD colspan="2"><IMG src="../images/accents/pixel.gif" width="1" height="1" border="0"></TD>
+						</TR>
+					</TABLE>
+					<br />
+					<font color="#3b4455" size="2">For your safety and security, this website requires 
+						that you enter your card verification number, if one is available. The 
+						verification number is a 3 or 4-digit number printed on your card.<p>
+							If you are using a Visa, Mastercard, or Discover card, it is a 3 digit number 
+							that appears to the right of your card number (see below).
+							<br />
+							<img src="Images/shopping_cart/cvv_3.gif" width="157" height="96">
+							<br />
+							<br />
+							If you are using an American Express card, the verification number is a 4 digit 
+							number that appears on the front of your card, above and either on the left or 
+							right of the card number (see below)
+							<br />
+							<img src="Images/shopping_cart/cvv_4.gif" width="200" height="140">
+							<br />
+							<br />
+							If your card does not have a verification number, try another card or enter the 
+							number 000.
+							<br />
+							<br />
+							<center><a href="javascript:window.close();">Close Window</a>
+							</center>
+					</font>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

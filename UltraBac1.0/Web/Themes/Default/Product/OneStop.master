@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" AutoEventWireup="true" CodeFile="OneStop.master.cs" Inherits="Themes_Default_Product_OneStop" %>
+<%@ MasterType VirtualPath="~/Themes/Default/Common/main.master" %>
+<%@ Register Src="~/_controls/productListOrder.ascx" TagPrefix="pop" TagName="ProductList" %>
+<%@ Reference Control="~/_controls/productorder.ascx" %>
+
+<asp:Content ContentPlaceHolderID="HeadPlaceHolder" runat="server">
+
+	<asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server" />
+	
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" Runat="Server">
+<script type="text/javascript">
+	function ValidateQuantity(source, clientside_arguments) {
+		clientside_arguments.IsValid = false;
+		$$('#Quantity input').each(function(s, index) {
+			if (s.value > 0) {
+				clientside_arguments.IsValid = true;
+				return;
+			}
+		});
+	}
+
+</script>
+	
+	<POP:NavLeftSidebar ID="uxNavLeftSidebar" runat="server" />
+	
+		<div id="Content" class="oneStop">		
+        <ZNode:Content ID="uxContent" runat="server" />
+		<div id="Quantity">
+			<pop:ProductList runat="server" CategoryId='<%$AppSettings:BaseProductsCategory %>' />
+			<pop:ProductList runat="server" CategoryId='<%$AppSettings:BundlesProductCategory %>' />
+			<pop:ProductList runat="server" CategoryId='<%$AppSettings:AddonsCategory %>' />
+		</div>
+		<asp:CustomValidator SetFocusOnError="true" ID="CustomValidator1" runat="server" OnServerValidate="CheckTotals" 
+		ClientValidationFunction="ValidateQuantity"
+		ErrorMessage="Please enter product quantities."
+		ForeColor=""
+		Display="Static"
+		CssClass="Error marginLeft0" />
+		<asp:ImageButton runat="server" id="uxAddToCart" OnClick="AddToCart_Click" ImageUrl="~/_img/buttons/add_to_cart.png" />
+
+	    <!-- /Content --></div>
+		
+		<asp:ContentPlaceHolder ID="RightColumn" runat="server" />		
+  
+  <POP:RightSidebar ID="uxRightSidebar" runat="server" />
+</asp:Content>

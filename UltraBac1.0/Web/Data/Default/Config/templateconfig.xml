@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MasterPage>
+  
+  <!-- User Controls -->
+  <Item>
+    <code placeholder="#LOGO#">
+      <![CDATA[<ZNode:Logo ID="LOGO" runat="server"></ZNode:Logo>]]>
+      <![CDATA[<ZNode:Logo ID="LOGO" runat="server" />]]>
+    </code> 
+  </Item>
+  <Item>
+    <code placeholder="#CART_ITEM_COUNT#">
+      <![CDATA[<ZNode:CartItemCount ID="CART_ITEM_COUNT" runat="server"></ZNode:CartItemCount>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#HOME_PAGE_SPECIALS#">
+      <![CDATA[<ZNode:HomePageSpecials ID="HomePageSpecials" runat="server" Title="Specials"></ZNode:HomePageSpecials>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#STORE_MENU#">
+      <![CDATA[<ZNode:StoreMenu ID="STORE_MENU" runat="server"></ZNode:StoreMenu>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#POWERED_BY_ZNODE#">
+      <![CDATA[<ZNode:PoweredByZnode ID="POWERED_BY_ZNODE" runat="server"></ZNode:PoweredByZnode>]]>
+      <![CDATA[<ZNode:PoweredByZnode ID="POWERED_BY_ZNODE" runat="server" />]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#NEWSLETTER_SIGNUP#">
+      <![CDATA[<ZNode:NewsLetterSignup ID="NEWS_LETTER_SIGNUP" runat="server"></ZNode:NewsLetterSignup>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#BREAD_CRUMBS#">
+      <![CDATA[<ZNode:StoreBreadCrumbs ID="BREAD_CRUMBS" runat="server"></ZNode:StoreBreadCrumbs>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#HEADER_CUSTOMER_SERVICE#">
+      <![CDATA[<ZNode:CustomMessage ID="HEADER_CUSTOMER_SERVICE" MessageKey="HeaderCustomerService" runat="server"></ZNode:CustomMessage>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#FOOTER_COPYRIGHT#">
+      <![CDATA[<ZNode:CustomMessage ID="FOOTER_COPYRIGHT" MessageKey="FooterCopyright" runat="server"></ZNode:CustomMessage>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#STORE_NAVIGATION#">
+      <![CDATA[<znode:storecategories ID="STORE_NAVIGATION" runat="server"></znode:storecategories>]]>
+      <![CDATA[<znode:storecategories ID="STORE_NAVIGATION" runat="server" />]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#QUICK_SEARCH#">
+      <![CDATA[<znode:quicksearch ID="QUICK_SEARCH" runat="server"></znode:quicksearch>]]>
+      <![CDATA[<znode:quicksearch ID="QUICK_SEARCH" runat="server" />]]>
+    </code>
+  </Item>
+  <!-- Contact US Replacement -->
+  <Item>
+    <code placeholder="#CONTACT#">
+      <![CDATA[<ZNode:Contact ID="CONTACT" runat="Server"></ZNode:Contact>]]>
+    </code>
+  </Item>
+    
+  <!-- Web Controls Replacement -->
+  <Item>
+    <code placeholder="#LOGIN_STATUS#">
+        <![CDATA[<asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Sign-In" />]]>
+    </code>    
+  </Item>
+  <Item>
+    <code placeholder="#POPUP_HEADER#">
+      <![CDATA[<asp:contentplaceholder id="Header" runat="server"></asp:contentplaceholder>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#POPUP_BODY#">
+      <![CDATA[<asp:contentplaceholder id="Body" runat="server"></asp:contentplaceholder>]]>
+    </code>
+  </Item>
+  <Item>
+    <code placeholder="#POPUP_FOOTER#">
+      <![CDATA[<asp:contentplaceholder id="Footer" runat="server"></asp:contentplaceholder>]]>
+    </code>
+  </Item>
+  
+  <!-- Content Place Holder Replacement -->
+  <Item>
+    <code placeholder="#CONTENT#">
+      <![CDATA[<asp:ContentPlaceHolder ID="uxMainContent" runat="server"></asp:ContentPlaceHolder>]]>
+    </code>
+  </Item>
+
+  <!-- Register User Controls Replacement -->
+  <Item>
+    <code placeholder="#Register_UserControls#">
+      <![CDATA[<%@ Register Src="~/Controls/HomePageSpecials.ascx" TagName="HomePageSpecials" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/NavigationMenu.ascx" TagName="StoreMenu" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/PoweredByZnode.ascx" TagName="PoweredByZnode" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/CartItemCount.ascx" TagName="CartItemCount" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/Logo.ascx" TagName="Logo" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/NewsLetterSignup.ascx" TagName="NewsLetterSignup" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/QuickSearch.ascx" TagName="QuickSearch" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/CustomMessage.ascx" TagName="CustomMessage" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/NavigationBreadCrumbs.ascx" TagName="StoreBreadCrumbs" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Controls/NavigationCategories.ascx" TagName="StoreCategories" TagPrefix="ZNode" %>]]>
+      <![CDATA[<%@ Register Src="~/Public/Custom/Contact.ascx" TagName="Contact" TagPrefix="ZNode" %>]]>
+    </code>
+  </Item>
+</MasterPage>
+

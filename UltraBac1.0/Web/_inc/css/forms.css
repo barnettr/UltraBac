@@ -1,0 +1,23 @@
+/**
+ * forms.css
+ * General default styles for forms.
+*/
+
+
+div.error
+
+ol.form li .error {  }
+
+
+label {}
+span.label {}
+
+li.submit {}
+
+.required {}
+	.required label {}
+	.required input {}  /* text, radio, checkbox */
+	.required textarea {}
+	.required select {}
+
+

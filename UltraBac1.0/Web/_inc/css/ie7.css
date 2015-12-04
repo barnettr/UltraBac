@@ -1,0 +1,13 @@
+a.actionButton {
+    margin-bottom: 0.3em;
+}
+
+#Nav_Sub li.here a {margin-top: -2px !important;}
+
+.radio li input {margin-right: 3px;}
+
+div.tab_content {zoom: 1;}
+
+ul#faq-list {
+	    margin-left: 18px;
+	}

@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" %>
+<%@ MasterType VirtualPath="~/Themes/Default/Common/main.master" %>
+<%@ Register Src="~/Themes/Default/Content/Content.ascx" TagName="Content" TagPrefix="ZNode" %>
+
+<script runat="server">
+    public void Page_Load(object sender, EventArgs e)
+    {
+        SecurityUtility.EnsureInsecure(Request, Response);
+    }
+</script>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" Runat="Server">
+<POP:NavLeftSidebar ID="uxNavLeftSidebar" runat="server" />
+<div id="two-column-wrapper">
+<div id="Content">
+	
+	<ZNode:Content ID="Content1" runat="server"  Visible="true"/>
+	<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+
+<!-- /Content --></div>
+</div>
+</asp:Content>
+

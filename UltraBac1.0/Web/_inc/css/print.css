@@ -1,0 +1,43 @@
+div.logo a span,
+div#Header_Top div.nav,
+div#Header_Stuff,
+div#Nav_Site,
+ol.checkout-steps,
+a.home_link,
+div#Footer,
+#Nav_Sub,
+#Sidebar,
+#Nav_Section {
+	display: none !important;
+}
+div.logo a img {
+	border: none;
+}
+
+#Nav_Sub {display: none;}
+
+
+
+ol.form li, ul.form li {
+    display: block;
+    margin: 0 !important;
+    padding: 0;
+    clear:both;
+}
+ol.form li label {
+    text-align:right;
+}
+ol.form li input.text {
+    padding: 0;
+    margin: 0;
+    float: right;
+    width: 550px !important;
+}
+ol.form li input, ol.form li select {
+    float: right;
+    width: 550px;
+}
+ol.form textarea {
+    float:right;
+    width: 550px;
+}

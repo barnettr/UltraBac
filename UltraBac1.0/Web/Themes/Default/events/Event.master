@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" AutoEventWireup="true" CodeFile="Event.master.cs" Inherits="Themes_Default_events_Event" %>
+<%@ MasterType VirtualPath="~/Themes/Default/Common/main.master" %>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" Runat="Server">
+		<POP:NavLeftSidebar ID="uxNavLeftSidebar" runat="server" />
+	
+		<div id="Content">
+		
+		<ZNode:Content runat="server" />
+	    <asp:Repeater runat="server" ID="uxEvents">
+	    <HeaderTemplate>
+	    <ul class="event-list">
+	        <li><p class="thank-you"><strong>Thank you for joining us at these shows.</strong></p></li>
+	    </HeaderTemplate>
+	    <ItemTemplate>
+	    <li class="item">
+	         
+	         <ul>
+	            <li>
+	                <%# Eval("Detail") %>
+	            </li>
+	            <li>
+	            <a href="<%# ResolveUrl("~/event.aspx?event=" + Eval("Id")) %>"><%# Eval("Title") %></a> | <%# Eval("DisplayDate") %>
+	            </li>
+	            <li><%# Eval("Location") %> | Booth: <%# Eval("Booth") %></li>
+
+	        </ul>
+	        <div class="hr"><hr /></div>
+	    </li>
+	    </ItemTemplate>	    
+	    <FooterTemplate>
+	    </ul>
+	    </FooterTemplate>
+	    </asp:Repeater>
+			
+	<!-- /Content --></div>	
+  
+  <POP:RightSidebar ID="uxRightSidebar" runat="server" />
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="TurnOffBreadcrumb" />

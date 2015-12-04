@@ -1,0 +1,4 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Redirect.master.cs" Inherits="Themes_Default_Content_Redirect" %>
+
+
+<%--Blank, this master page will only redirect to another page--%>

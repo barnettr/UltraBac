@@ -1,0 +1,10 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="../common/main.master" %>
+<%@ Register Src="login.ascx" TagName="Login" TagPrefix="ZNode" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+   <ZNode:Login ID="uxLogin" runat="server"  Visible="true"/>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="TurnOffBreadcrumb" />
+<asp:Content runat="server" ContentPlaceHolderID="TurnOffNewsletter" />

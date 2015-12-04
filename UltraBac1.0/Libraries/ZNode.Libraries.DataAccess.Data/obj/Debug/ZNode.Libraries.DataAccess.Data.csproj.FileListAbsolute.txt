@@ -1,0 +1,15 @@
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\ZNode.Libraries.DataAccess.Data.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\ZNode.Libraries.DataAccess.Data.pdb
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\ZNode.Libraries.DataAccess.Data.xml
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\ZNode.Libraries.DataAccess.Entities.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\ZNode.Libraries.DataAccess.Entities.pdb
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\bin\Debug\ZNode.Libraries.DataAccess.Entities.xml
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\obj\Debug\ZNode.Libraries.DataAccess.Data.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Data\obj\Debug\ZNode.Libraries.DataAccess.Data.pdb

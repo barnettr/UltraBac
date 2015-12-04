@@ -1,0 +1,12 @@
+<%@ Master Language="C#" AutoEventWireup="true" %>
+<%@ Register Src="productzoom.ascx" TagName="ProductZoom" TagPrefix="ZNode" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head" runat="server">
+    <link id="Link1" href="../common/style.css" type="text/css" rel="stylesheet"  runat="server" />
+</head>
+<body class="Body">
+<form id="form1" runat="server">
+<ZNode:ProductZoom ID="uxProductZoom" runat="server"  Visible="true"/>
+</form> 
+</body> 

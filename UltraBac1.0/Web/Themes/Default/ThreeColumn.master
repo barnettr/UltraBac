@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" AutoEventWireup="true" CodeFile="ThreeColumn.master.cs" Inherits="Themes_Default_ThreeColumn" %>
+<%@ MasterType VirtualPath="~/Themes/Default/Common/main.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadPlaceHolder" runat="server">
+
+	<asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server" />
+	
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+	
+	<POP:NavLeftSidebar ID="uxNavLeftSidebar" runat="server" />
+	
+		<div id="Content">		
+
+			<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+	
+		<!-- /Content --></div>
+		
+		<asp:ContentPlaceHolder ID="RightColumn" runat="server" />
+  
+  <POP:RightSidebar ID="uxRightSidebar" runat="server" />
+</asp:Content>

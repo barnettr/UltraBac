@@ -1,0 +1,42 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="../common/main.master" %>
+<%@ Register Src="search.ascx" TagName="Search" TagPrefix="ZNode" %>
+<%@ Register Src="../category/navigationcategories.ascx" TagName="NavigationCategories" TagPrefix="ZNode" %>
+<%@ Register Src="../specials/navigationspecials.ascx" TagName="NavigationSpecials" TagPrefix="ZNode" %>
+<%@ Register Src="../common/QuickSearch.ascx" TagName="QuickSearch" TagPrefix="ZNode" %>
+<%@ Register Src="../navigation/NavigationBreadCrumbs.ascx" TagName="StoreBreadCrumbs" TagPrefix="ZNode" %>
+<%@ Register Src="../brand/navigationbrand.ascx" TagName="NavigationBrand" TagPrefix="ZNode" %>
+<%@ Register Src="../price/navigationprice.ascx" TagName="NavigationPrice" TagPrefix="ZNode" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+    <table cellpadding="0" cellspacing="0" border="0" class="TableContainer">       
+        <tr>
+            <td><img id="Img10" src="~/images/accents/clear.gif" class ="ClearImageLeft" runat="server" /></td>
+            <td align=left><img id="Img11" src="~/images/accents/clear.gif" class="ClearImageRight" runat="server" /></td>
+        </tr>
+        <tr>                     
+            <td valign="top">	
+                <div id="LeftColumn">
+                   <ZNode:NavigationCategories ID="CATEGORIES" runat="server"></ZNode:NavigationCategories>
+                   <ZNode:NavigationBrand ID="BRAND" runat="server"></ZNode:NavigationBrand>
+                   <ZNode:NavigationPrice ID="PRICE" runat="server"></ZNode:NavigationPrice>
+                   <ZNode:NavigationSpecials ID="SPECIALS" runat="server"></ZNode:NavigationSpecials>
+                </div>
+            </td>                     
+            <td valign="top">       
+               <div id="MiddleColumn">
+                    <div class="Field">
+                        <table cellpadding="0" cellspacing="0" border="0" class="TableContainer">
+                            <tr>
+                                <td><ZNode:StoreBreadCrumbs ID="BREAD_CRUMBS" runat="server"></ZNode:StoreBreadCrumbs></td>
+                                <td align="right"><ZNode:QuickSearch ID="QUICK_SEARCH" runat="server"></ZNode:QuickSearch></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div><ZNode:Search ID="uxSearch" runat="server"  Visible="true"/></div>                   
+              </div>                           
+            </td>
+        </tr>                   
+    </table>
+   
+</asp:Content>

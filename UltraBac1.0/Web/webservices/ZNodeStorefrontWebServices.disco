@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<disco:discovery xmlns:disco="http://schemas.xmlsoap.org/disco/"  xmlns:scl="http://schemas.xmlsoap.org/disco/scl/">
+  <scl:contractRef ref="http://localhost/webservices/CustomerWebService.asmx?WSDL"/>  
+  <scl:contractRef ref="http://localhost/webservices/OrderWebService.asmx?WSDL"/>
+  <scl:contractRef ref="http://localhost/webservices/CatalogWebService.asmx?WSDL"/>
+</disco:discovery>

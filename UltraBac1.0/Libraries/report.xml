@@ -1,0 +1,362 @@
+<NetTiersReport DALNameSpace="ZNode.Libraries.DataAccess.Data" SolutionLink="file:\\\C:\ZnodeProjects\znodestorefront_framework\Libraries\ZNode.Libraries.DataAccess.sln" ConnectionString="Data Source=GALACTICA\SQLEXPRESS;Initial Catalog=ZNodeStorefront;user id=znodeuser;password=p@ssw0rd" FactoryType="ZNode.Libraries.DataAccess.Entities.EntityFactory">
+  <initialization startTime="128372336640810000" executionTime="00:01:49.1460000">
+    <Message level="0" startTime="128372336640910000" message="Validating parameters." />
+    <Message level="0" startTime="128372336640910000" message="Loading templates." executionTime="00:01:33.8810000" />
+    <Message level="0" startTime="128372337730310000" message="Creating folders and copying dependencies." />
+  </initialization>
+  <common startTime="128372337732270000" executionTime="00:00:16.7000000">
+    <File name="ListBase.cs" startTime="128372337732290000" />
+    <File name="TList.cs" startTime="128372337733240000" />
+    <File name="VList.cs" startTime="128372337733730000" />
+    <File name="IEntity.cs" startTime="128372337734090000" />
+    <File name="IEntityId.cs" startTime="128372337734300000" />
+    <File name="IEntityKey.cs" startTime="128372337734390000" />
+    <File name="EntityFactory.cs" startTime="128372337734490000" />
+    <File name="EntityFactoryBase.cs" startTime="128372337734550000" />
+    <File name="IEntityFactory.cs" startTime="128372337734840000" />
+    <File name="IEntityCacheItem.cs" startTime="128372337734950000" />
+    <File name="EntityCache.cs" startTime="128372337735040000" />
+    <File name="EntityLocator.cs" startTime="128372337735180000" />
+    <File name="EntityManager.cs" startTime="128372337735320000" />
+    <File name="BrokenRule.cs" startTime="128372337735680000" />
+    <File name="BrokenRulesList.cs" startTime="128372337735790000" />
+    <File name="CommonRules.cs" startTime="128372337735920000" />
+    <File name="ValidationRuleArgs.cs" startTime="128372337736560000" />
+    <File name="ValidationRuleHandler.cs" startTime="128372337736660000" />
+    <File name="ValidationRuleInfo.cs" startTime="128372337736760000" />
+    <File name="ValidationRules.cs" startTime="128372337736930000" />
+    <File name="EntityBaseCore.generated.cs" startTime="128372337737130000" />
+    <File name="EntityKeyBaseCore.generated.cs" startTime="128372337737480000" />
+    <File name="SecurityContext.cs" startTime="128372337737590000" />
+    <File name="IProcessor.cs" startTime="128372337737770000" />
+    <File name="IProcessorResult.cs" startTime="128372337737870000" />
+    <File name="ProcessorBase.cs" startTime="128372337737970000" />
+    <File name="GenericProcessorResult.cs" startTime="128372337738090000" />
+    <File name="DomainUtil.cs" startTime="128372337738200000" />
+    <File name="ConnectionScope.cs" startTime="128372337738390000" />
+    <File name="IComponentService.cs" startTime="128372337738690000" />
+    <File name="ServiceBaseCore.cst.cs" startTime="128372337738790000" />
+    <File name="ServiceViewBaseCore.cst.cs" startTime="128372337739260000" />
+    <File name="ServiceResult.cs" startTime="128372337739640000" />
+    <File name="Filter.cs" startTime="128372337739800000" />
+    <File name="EntityPropertyComparer.cs" startTime="128372337740400000" />
+    <File name="GenericTypeConverter.cs" startTime="128372337740480000" />
+    <File name="StoredProcedures.sql" startTime="128372337740580000" />
+    <File name="Utility.cs" startTime="128372337886470000" />
+    <File name="StoredProcedureProvider.cs" startTime="128372337886980000" />
+    <File name="TransactionManager.cs" startTime="128372337887360000" />
+    <File name="DataRepository.cs" startTime="128372337887530000" />
+    <File name="IEntityProvider.cs" startTime="128372337887990000" />
+    <File name="IEntityViewProvider.cs" startTime="128372337888710000" />
+    <File name="EntityProviderBaseCore.generated.cs" startTime="128372337888950000" />
+    <File name="EntityViewProviderBaseCore.generated.cs" startTime="128372337890530000" />
+    <File name="NetTiersProvider.cs" startTime="128372337891260000" />
+    <File name="NetTiersProviderCollection.cs" startTime="128372337891760000" />
+    <File name="NetTiersServiceSection.cs" startTime="128372337891840000" />
+    <File name="ExpressionParserBase.cs" startTime="128372337891920000" />
+    <File name="SqlExpressionParser.cs" startTime="128372337892120000" />
+    <File name="SqlStringBuilder.cs" startTime="128372337892480000" />
+    <File name="SqlUtil.cs" startTime="128372337893810000" />
+    <File name="StringTokenizer.cs" startTime="128372337894310000" />
+    <File name="SqlClient\SqlNetTiersProvider.cs" startTime="128372337894620000" />
+    <File name="Service.csproj" startTime="128372337895450000" />
+    <File name="ZNode.Libraries.DataAccess.Entities.csproj" startTime="128372337897300000" />
+    <File name="ZNode.Libraries.DataAccess.Data.Data.csproj" startTime="128372337897600000" />
+    <File name="ZNode.Libraries.DataAccess.Entities.Data.SqlClient.csproj" startTime="128372337897740000" />
+    <File name="EntityHelper.cs" startTime="128372337897860000" />
+    <File name="EntityUtil.cs" startTime="128372337898330000" />
+  </common>
+  <Table name="ZNodePortal" startTime="128372337899290000" executionTime="00:00:03.2870000">
+    <File name="Portal.generated.cs" startTime="128372337899310000" executionTime="00:00:01.1710000" />
+    <File name="PortalServiceBase.cs.generated" startTime="128372337911050000" executionTime="00:00:01.6660000" />
+    <File name="PortalProviderBaseCore.generated.cs" startTime="128372337927740000" executionTime="00:00:00.2420000" />
+    <File name="SqlClient\SqlPortalProviderBase.generated.cs" startTime="128372337930170000" executionTime="00:00:00.1980000" />
+  </Table>
+  <Table name="ZNodeProductType" startTime="128372337932160000" executionTime="00:00:02.2940000">
+    <File name="ProductType.generated.cs" startTime="128372337932160000" executionTime="00:00:00.9360000" />
+    <File name="ProductTypeServiceBase.cs.generated" startTime="128372337941550000" executionTime="00:00:01.3130000" />
+    <File name="ProductTypeProviderBaseCore.generated.cs" startTime="128372337954690000" executionTime="00:00:00.0200000" />
+    <File name="SqlClient\SqlProductTypeProviderBase.generated.cs" startTime="128372337954900000" executionTime="00:00:00.0200000" />
+  </Table>
+  <Table name="ZNodeProductCrossSell" startTime="128372337955100000" executionTime="00:00:02.3210000">
+    <File name="ProductCrossSell.generated.cs" startTime="128372337955100000" executionTime="00:00:00.9620000" />
+    <File name="ProductCrossSellServiceBase.cs.generated" startTime="128372337964740000" executionTime="00:00:01.3180000" />
+    <File name="ProductCrossSellProviderBaseCore.generated.cs" startTime="128372337977940000" executionTime="00:00:00.0170000" />
+    <File name="SqlClient\SqlProductCrossSellProviderBase.generated.cs" startTime="128372337978110000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeProductHighlight" startTime="128372337978310000" executionTime="00:00:02.3060000">
+    <File name="ProductHighlight.generated.cs" startTime="128372337978310000" executionTime="00:00:00.9480000" />
+    <File name="ProductHighlightServiceBase.cs.generated" startTime="128372337987820000" executionTime="00:00:01.3090000" />
+    <File name="ProductHighlightProviderBaseCore.generated.cs" startTime="128372338000930000" executionTime="00:00:00.0210000" />
+    <File name="SqlClient\SqlProductHighlightProviderBase.generated.cs" startTime="128372338001150000" executionTime="00:00:00.0220000" />
+  </Table>
+  <Table name="ZNodeProductImage" startTime="128372338001370000" executionTime="00:00:02.2970000">
+    <File name="ProductImage.generated.cs" startTime="128372338001370000" executionTime="00:00:00.9150000" />
+    <File name="ProductImageServiceBase.cs.generated" startTime="128372338010540000" executionTime="00:00:01.3400000" />
+    <File name="ProductImageProviderBaseCore.generated.cs" startTime="128372338023960000" executionTime="00:00:00.0170000" />
+    <File name="SqlClient\SqlProductImageProviderBase.generated.cs" startTime="128372338024140000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeProductTypeAttribute" startTime="128372338024340000" executionTime="00:00:02.4560000">
+    <File name="ProductTypeAttribute.generated.cs" startTime="128372338024340000" executionTime="00:00:00.9880000" />
+    <File name="ProductTypeAttributeServiceBase.cs.generated" startTime="128372338034250000" executionTime="00:00:01.4270000" />
+    <File name="ProductTypeAttributeProviderBaseCore.generated.cs" startTime="128372338048530000" executionTime="00:00:00.0180000" />
+    <File name="SqlClient\SqlProductTypeAttributeProviderBase.generated.cs" startTime="128372338048710000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodePaymentType" startTime="128372338048900000" executionTime="00:00:02.3500000">
+    <File name="PaymentType.generated.cs" startTime="128372338048900000" executionTime="00:00:00.9220000" />
+    <File name="PaymentTypeList.cs" startTime="128372338058140000" executionTime="00:00:00.0750000" />
+    <File name="PaymentTypeServiceBase.cs.generated" startTime="128372338058900000" executionTime="00:00:01.2950000" />
+    <File name="PaymentTypeProviderBaseCore.generated.cs" startTime="128372338071860000" executionTime="00:00:00.0330000" />
+    <File name="SqlClient\SqlPaymentTypeProviderBase.generated.cs" startTime="128372338072200000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeProduct" startTime="128372338072400000" executionTime="00:00:02.3980000">
+    <File name="Product.generated.cs" startTime="128372338072400000" executionTime="00:00:00.9970000" />
+    <File name="ProductServiceBase.cs.generated" startTime="128372338082400000" executionTime="00:00:01.3190000" />
+    <File name="ProductProviderBaseCore.generated.cs" startTime="128372338095610000" executionTime="00:00:00.0430000" />
+    <File name="SqlClient\SqlProductProviderBase.generated.cs" startTime="128372338096050000" executionTime="00:00:00.0320000" />
+  </Table>
+  <Table name="ZNodePaymentSetting" startTime="128372338096380000" executionTime="00:00:02.3290000">
+    <File name="PaymentSetting.generated.cs" startTime="128372338096380000" executionTime="00:00:00.9730000" />
+    <File name="PaymentSettingServiceBase.cs.generated" startTime="128372338106140000" executionTime="00:00:01.2940000" />
+    <File name="PaymentSettingProviderBaseCore.generated.cs" startTime="128372338119100000" executionTime="00:00:00.0220000" />
+    <File name="SqlClient\SqlPaymentSettingProviderBase.generated.cs" startTime="128372338119330000" executionTime="00:00:00.0340000" />
+  </Table>
+  <Table name="ZNodeProductAddOn" startTime="128372338119670000" executionTime="00:00:02.2700000">
+    <File name="ProductAddOn.generated.cs" startTime="128372338119670000" executionTime="00:00:00.9070000" />
+    <File name="ProductAddOnServiceBase.cs.generated" startTime="128372338128770000" executionTime="00:00:01.3180000" />
+    <File name="ProductAddOnProviderBaseCore.generated.cs" startTime="128372338141970000" executionTime="00:00:00.0190000" />
+    <File name="SqlClient\SqlProductAddOnProviderBase.generated.cs" startTime="128372338142170000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeProductCategory" startTime="128372338142370000" executionTime="00:00:02.6780000">
+    <File name="ProductCategory.generated.cs" startTime="128372338142370000" executionTime="00:00:01.2830000" />
+    <File name="ProductCategoryServiceBase.cs.generated" startTime="128372338155220000" executionTime="00:00:01.3540000" />
+    <File name="ProductCategoryProviderBaseCore.generated.cs" startTime="128372338168780000" executionTime="00:00:00.0170000" />
+    <File name="SqlClient\SqlProductCategoryProviderBase.generated.cs" startTime="128372338168960000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeProductAttribute" startTime="128372338169150000" executionTime="00:00:02.2410000">
+    <File name="ProductAttribute.generated.cs" startTime="128372338169150000" executionTime="00:00:00.9210000" />
+    <File name="ProductAttributeServiceBase.cs.generated" startTime="128372338178390000" executionTime="00:00:01.2700000" />
+    <File name="ProductAttributeProviderBaseCore.generated.cs" startTime="128372338191100000" executionTime="00:00:00.0170000" />
+    <File name="SqlClient\SqlProductAttributeProviderBase.generated.cs" startTime="128372338191280000" executionTime="00:00:00.0280000" />
+  </Table>
+  <Table name="ZNodeProfile" startTime="128372338191560000" executionTime="00:00:02.2820000">
+    <File name="Profile.generated.cs" startTime="128372338191560000" executionTime="00:00:00.9040000" />
+    <File name="ProfileServiceBase.cs.generated" startTime="128372338200630000" executionTime="00:00:01.3220000" />
+    <File name="ProfileProviderBaseCore.generated.cs" startTime="128372338213870000" executionTime="00:00:00.0310000" />
+    <File name="SqlClient\SqlProfileProviderBase.generated.cs" startTime="128372338214180000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeState" startTime="128372338214380000" executionTime="00:00:02.3460000">
+    <File name="State.generated.cs" startTime="128372338214380000" executionTime="00:00:00.9170000" />
+    <File name="StateServiceBase.cs.generated" startTime="128372338223570000" executionTime="00:00:01.3920000" />
+    <File name="StateProviderBaseCore.generated.cs" startTime="128372338237500000" executionTime="00:00:00.0160000" />
+    <File name="SqlClient\SqlStateProviderBase.generated.cs" startTime="128372338237670000" executionTime="00:00:00.0170000" />
+  </Table>
+  <Table name="ZNodeSKUAttribute" startTime="128372338237840000" executionTime="00:00:03.0910000">
+    <File name="SKUAttribute.generated.cs" startTime="128372338237840000" executionTime="00:00:00.9150000" />
+    <File name="SKUAttributeServiceBase.cs.generated" startTime="128372338247010000" executionTime="00:00:02.1330000" />
+    <File name="SKUAttributeProviderBaseCore.generated.cs" startTime="128372338268360000" executionTime="00:00:00.0190000" />
+    <File name="SqlClient\SqlSKUAttributeProviderBase.generated.cs" startTime="128372338268560000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeShippingType" startTime="128372338268750000" executionTime="00:00:02.3170000">
+    <File name="ShippingType.generated.cs" startTime="128372338268750000" executionTime="00:00:00.9510000" />
+    <File name="ShippingTypeServiceBase.cs.generated" startTime="128372338278290000" executionTime="00:00:01.3250000" />
+    <File name="ShippingTypeProviderBaseCore.generated.cs" startTime="128372338291560000" executionTime="00:00:00.0160000" />
+    <File name="SqlClient\SqlShippingTypeProviderBase.generated.cs" startTime="128372338291730000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeTaxRule" startTime="128372338291920000" executionTime="00:00:02.2660000">
+    <File name="TaxRule.generated.cs" startTime="128372338291920000" executionTime="00:00:00.9010000" />
+    <File name="TaxRuleServiceBase.cs.generated" startTime="128372338300960000" executionTime="00:00:01.3130000" />
+    <File name="TaxRuleProviderBaseCore.generated.cs" startTime="128372338314100000" executionTime="00:00:00.0280000" />
+    <File name="SqlClient\SqlTaxRuleProviderBase.generated.cs" startTime="128372338314390000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeAccountType" startTime="128372338314590000" executionTime="00:00:02.2720000">
+    <File name="AccountType.generated.cs" startTime="128372338314590000" executionTime="00:00:00.9260000" />
+    <File name="AccountTypeServiceBase.cs.generated" startTime="128372338323870000" executionTime="00:00:01.3050000" />
+    <File name="AccountTypeProviderBaseCore.generated.cs" startTime="128372338336940000" executionTime="00:00:00.0150000" />
+    <File name="SqlClient\SqlAccountTypeProviderBase.generated.cs" startTime="128372338337100000" executionTime="00:00:00.0200000" />
+  </Table>
+  <Table name="ZNodeStore" startTime="128372338337310000" executionTime="00:00:02.2990000">
+    <File name="Store.generated.cs" startTime="128372338337310000" executionTime="00:00:00.9630000" />
+    <File name="StoreServiceBase.cs.generated" startTime="128372338347010000" executionTime="00:00:01.2780000" />
+    <File name="StoreProviderBaseCore.generated.cs" startTime="128372338359810000" executionTime="00:00:00.0250000" />
+    <File name="SqlClient\SqlStoreProviderBase.generated.cs" startTime="128372338360070000" executionTime="00:00:00.0220000" />
+  </Table>
+  <Table name="ZNodeSKU" startTime="128372338360300000" executionTime="00:00:02.7280000">
+    <File name="SKU.generated.cs" startTime="128372338360300000" executionTime="00:00:01.3590000" />
+    <File name="SKUServiceBase.cs.generated" startTime="128372338373920000" executionTime="00:00:01.3170000" />
+    <File name="SKUProviderBaseCore.generated.cs" startTime="128372338387110000" executionTime="00:00:00.0240000" />
+    <File name="SqlClient\SqlSKUProviderBase.generated.cs" startTime="128372338387360000" executionTime="00:00:00.0210000" />
+  </Table>
+  <Table name="ZNodeContactTemperature" startTime="128372338387580000" executionTime="00:00:02.2800000">
+    <File name="ContactTemperature.generated.cs" startTime="128372338387580000" executionTime="00:00:00.8920000" />
+    <File name="ContactTemperatureServiceBase.cs.generated" startTime="128372338396530000" executionTime="00:00:01.3490000" />
+    <File name="ContactTemperatureProviderBaseCore.generated.cs" startTime="128372338410040000" executionTime="00:00:00.0160000" />
+    <File name="SqlClient\SqlContactTemperatureProviderBase.generated.cs" startTime="128372338410200000" executionTime="00:00:00.0170000" />
+  </Table>
+  <Table name="ZNodeShipping" startTime="128372338410380000" executionTime="00:00:02.3100000">
+    <File name="Shipping.generated.cs" startTime="128372338410380000" executionTime="00:00:00.9460000" />
+    <File name="ShippingServiceBase.cs.generated" startTime="128372338419870000" executionTime="00:00:01.3030000" />
+    <File name="ShippingProviderBaseCore.generated.cs" startTime="128372338432920000" executionTime="00:00:00.0340000" />
+    <File name="SqlClient\SqlShippingProviderBase.generated.cs" startTime="128372338433270000" executionTime="00:00:00.0200000" />
+  </Table>
+  <Table name="ZNodeShippingRule" startTime="128372338433480000" executionTime="00:00:02.2380000">
+    <File name="ShippingRule.generated.cs" startTime="128372338433480000" executionTime="00:00:00.9140000" />
+    <File name="ShippingRuleServiceBase.cs.generated" startTime="128372338442660000" executionTime="00:00:01.2830000" />
+    <File name="ShippingRuleProviderBaseCore.generated.cs" startTime="128372338455500000" executionTime="00:00:00.0150000" />
+    <File name="SqlClient\SqlShippingRuleProviderBase.generated.cs" startTime="128372338455660000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeShippingServiceCode" startTime="128372338455860000" executionTime="00:00:02.4180000">
+    <File name="ShippingServiceCode.generated.cs" startTime="128372338455860000" executionTime="00:00:00.9560000" />
+    <File name="ShippingServiceCodeServiceBase.cs.generated" startTime="128372338465450000" executionTime="00:00:01.3990000" />
+    <File name="ShippingServiceCodeProviderBaseCore.generated.cs" startTime="128372338479460000" executionTime="00:00:00.0180000" />
+    <File name="SqlClient\SqlShippingServiceCodeProviderBase.generated.cs" startTime="128372338479650000" executionTime="00:00:00.0390000" />
+  </Table>
+  <Table name="ZNodeShippingRuleType" startTime="128372338480040000" executionTime="00:00:02.2520000">
+    <File name="ShippingRuleType.generated.cs" startTime="128372338480040000" executionTime="00:00:00.9140000" />
+    <File name="ShippingRuleTypeServiceBase.cs.generated" startTime="128372338489210000" executionTime="00:00:01.2890000" />
+    <File name="ShippingRuleTypeProviderBaseCore.generated.cs" startTime="128372338502120000" executionTime="00:00:00.0230000" />
+    <File name="SqlClient\SqlShippingRuleTypeProviderBase.generated.cs" startTime="128372338502360000" executionTime="00:00:00.0200000" />
+  </Table>
+  <Table name="ZNodeCaseType" startTime="128372338502560000" executionTime="00:00:02.2670000">
+    <File name="CaseType.generated.cs" startTime="128372338502570000" executionTime="00:00:00.9140000" />
+    <File name="CaseTypeServiceBase.cs.generated" startTime="128372338511740000" executionTime="00:00:01.3020000" />
+    <File name="CaseTypeProviderBaseCore.generated.cs" startTime="128372338524780000" executionTime="00:00:00.0260000" />
+    <File name="SqlClient\SqlCaseTypeProviderBase.generated.cs" startTime="128372338525050000" executionTime="00:00:00.0170000" />
+  </Table>
+  <Table name="ZNodeContentPage" startTime="128372338525230000" executionTime="00:00:02.2630000">
+    <File name="ContentPage.generated.cs" startTime="128372338525230000" executionTime="00:00:00.9190000" />
+    <File name="ContentPageServiceBase.cs.generated" startTime="128372338534440000" executionTime="00:00:01.3030000" />
+    <File name="ContentPageProviderBaseCore.generated.cs" startTime="128372338547480000" executionTime="00:00:00.0150000" />
+    <File name="SqlClient\SqlContentPageProviderBase.generated.cs" startTime="128372338547640000" executionTime="00:00:00.0210000" />
+  </Table>
+  <Table name="ZNodeCaseStatus" startTime="128372338547860000" executionTime="00:00:02.3020000">
+    <File name="CaseStatus.generated.cs" startTime="128372338547860000" executionTime="00:00:00.9240000" />
+    <File name="CaseStatusServiceBase.cs.generated" startTime="128372338557130000" executionTime="00:00:01.3380000" />
+    <File name="CaseStatusProviderBaseCore.generated.cs" startTime="128372338570520000" executionTime="00:00:00.0160000" />
+    <File name="SqlClient\SqlCaseStatusProviderBase.generated.cs" startTime="128372338570690000" executionTime="00:00:00.0190000" />
+  </Table>
+  <Table name="ZNodeContentPageRevision" startTime="128372338570880000" executionTime="00:00:02.4250000">
+    <File name="ContentPageRevision.generated.cs" startTime="128372338570880000" executionTime="00:00:00.9590000" />
+    <File name="ContentPageRevisionServiceBase.cs.generated" startTime="128372338580510000" executionTime="00:00:01.4240000" />
+    <File name="ContentPageRevisionProviderBaseCore.generated.cs" startTime="128372338594770000" executionTime="00:00:00.0160000" />
+    <File name="SqlClient\SqlContentPageRevisionProviderBase.generated.cs" startTime="128372338594940000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeCategory" startTime="128372338595130000" executionTime="00:00:02.3290000">
+    <File name="Category.generated.cs" startTime="128372338595130000" executionTime="00:00:00.9400000" />
+    <File name="CategoryServiceBase.cs.generated" startTime="128372338604550000" executionTime="00:00:01.3320000" />
+    <File name="CategoryProviderBaseCore.generated.cs" startTime="128372338617880000" executionTime="00:00:00.0300000" />
+    <File name="SqlClient\SqlCategoryProviderBase.generated.cs" startTime="128372338618190000" executionTime="00:00:00.0230000" />
+  </Table>
+  <Table name="ZNodeCasePriority" startTime="128372338618420000" executionTime="00:00:02.2710000">
+    <File name="CasePriority.generated.cs" startTime="128372338618420000" executionTime="00:00:00.8980000" />
+    <File name="CasePriorityServiceBase.cs.generated" startTime="128372338627430000" executionTime="00:00:01.2970000" />
+    <File name="CasePriorityProviderBaseCore.generated.cs" startTime="128372338640490000" executionTime="00:00:00.0240000" />
+    <File name="SqlClient\SqlCasePriorityProviderBase.generated.cs" startTime="128372338640740000" executionTime="00:00:00.0390000" />
+  </Table>
+  <Table name="ZNodeAddOn" startTime="128372338641140000" executionTime="00:00:02.2650000">
+    <File name="AddOn.generated.cs" startTime="128372338641140000" executionTime="00:00:00.9120000" />
+    <File name="AddOnServiceBase.cs.generated" startTime="128372338650290000" executionTime="00:00:01.3030000" />
+    <File name="AddOnProviderBaseCore.generated.cs" startTime="128372338663330000" executionTime="00:00:00.0180000" />
+    <File name="SqlClient\SqlAddOnProviderBase.generated.cs" startTime="128372338663510000" executionTime="00:00:00.0270000" />
+  </Table>
+  <Table name="ZNodeAccount" startTime="128372338663790000" executionTime="00:00:02.4640000">
+    <File name="Account.generated.cs" startTime="128372338663790000" executionTime="00:00:01.0070000" />
+    <File name="AccountServiceBase.cs.generated" startTime="128372338673890000" executionTime="00:00:01.3800000" />
+    <File name="AccountProviderBaseCore.generated.cs" startTime="128372338687700000" executionTime="00:00:00.0380000" />
+    <File name="SqlClient\SqlAccountProviderBase.generated.cs" startTime="128372338688090000" executionTime="00:00:00.0340000" />
+  </Table>
+  <Table name="ZNodeAddOnValue" startTime="128372338688430000" executionTime="00:00:02.4720000">
+    <File name="AddOnValue.generated.cs" startTime="128372338688430000" executionTime="00:00:01.0510000" />
+    <File name="AddOnValueServiceBase.cs.generated" startTime="128372338698980000" executionTime="00:00:01.3460000" />
+    <File name="AddOnValueProviderBaseCore.generated.cs" startTime="128372338712460000" executionTime="00:00:00.0480000" />
+    <File name="SqlClient\SqlAddOnValueProviderBase.generated.cs" startTime="128372338712940000" executionTime="00:00:00.0210000" />
+  </Table>
+  <Table name="ZNodeCase" startTime="128372338713150000" executionTime="00:00:02.3760000">
+    <File name="Case.generated.cs" startTime="128372338713160000" executionTime="00:00:00.9650000" />
+    <File name="CaseServiceBase.cs.generated" startTime="128372338722840000" executionTime="00:00:01.3410000" />
+    <File name="CaseProviderBaseCore.generated.cs" startTime="128372338736270000" executionTime="00:00:00.0290000" />
+    <File name="SqlClient\SqlCaseProviderBase.generated.cs" startTime="128372338736570000" executionTime="00:00:00.0330000" />
+  </Table>
+  <Table name="ZNodeAttributeType" startTime="128372338736910000" executionTime="00:00:02.3150000">
+    <File name="AttributeType.generated.cs" startTime="128372338736910000" executionTime="00:00:00.9190000" />
+    <File name="AttributeTypeServiceBase.cs.generated" startTime="128372338746140000" executionTime="00:00:01.3570000" />
+    <File name="AttributeTypeProviderBaseCore.generated.cs" startTime="128372338759720000" executionTime="00:00:00.0150000" />
+    <File name="SqlClient\SqlAttributeTypeProviderBase.generated.cs" startTime="128372338759880000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeCountry" startTime="128372338760060000" executionTime="00:00:02.6710000">
+    <File name="Country.generated.cs" startTime="128372338760060000" executionTime="00:00:00.9270000" />
+    <File name="CountryServiceBase.cs.generated" startTime="128372338769360000" executionTime="00:00:01.7030000" />
+    <File name="CountryProviderBaseCore.generated.cs" startTime="128372338786400000" executionTime="00:00:00.0180000" />
+    <File name="SqlClient\SqlCountryProviderBase.generated.cs" startTime="128372338786590000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeOrderProcessingType" startTime="128372338786770000" executionTime="00:00:02.3660000">
+    <File name="OrderProcessingType.generated.cs" startTime="128372338786770000" executionTime="00:00:00.9580000" />
+    <File name="OrderProcessingTypeServiceBase.cs.generated" startTime="128372338796380000" executionTime="00:00:01.3540000" />
+    <File name="OrderProcessingTypeProviderBaseCore.generated.cs" startTime="128372338809930000" executionTime="00:00:00.0310000" />
+    <File name="SqlClient\SqlOrderProcessingTypeProviderBase.generated.cs" startTime="128372338810250000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeNote" startTime="128372338810430000" executionTime="00:00:02.2470000">
+    <File name="Note.generated.cs" startTime="128372338810430000" executionTime="00:00:00.9000000" />
+    <File name="NoteServiceBase.cs.generated" startTime="128372338819460000" executionTime="00:00:01.2850000" />
+    <File name="NoteProviderBaseCore.generated.cs" startTime="128372338832330000" executionTime="00:00:00.0350000" />
+    <File name="SqlClient\SqlNoteProviderBase.generated.cs" startTime="128372338832690000" executionTime="00:00:00.0210000" />
+  </Table>
+  <Table name="ZNodeDiscountType" startTime="128372338832900000" executionTime="00:00:02.2860000">
+    <File name="DiscountType.generated.cs" startTime="128372338832900000" executionTime="00:00:00.9280000" />
+    <File name="DiscountTypeServiceBase.cs.generated" startTime="128372338842210000" executionTime="00:00:01.3230000" />
+    <File name="DiscountTypeProviderBaseCore.generated.cs" startTime="128372338855460000" executionTime="00:00:00.0120000" />
+    <File name="SqlClient\SqlDiscountTypeProviderBase.generated.cs" startTime="128372338855590000" executionTime="00:00:00.0170000" />
+  </Table>
+  <Table name="ZNodeOrderState" startTime="128372338855770000" executionTime="00:00:02.3180000">
+    <File name="OrderState.generated.cs" startTime="128372338855770000" executionTime="00:00:00.9840000" />
+    <File name="OrderStateServiceBase.cs.generated" startTime="128372338865640000" executionTime="00:00:01.2800000" />
+    <File name="OrderStateProviderBaseCore.generated.cs" startTime="128372338878460000" executionTime="00:00:00.0150000" />
+    <File name="SqlClient\SqlOrderStateProviderBase.generated.cs" startTime="128372338878620000" executionTime="00:00:00.0330000" />
+  </Table>
+  <Table name="ZNodeDiscountTarget" startTime="128372338878950000" executionTime="00:00:02.3790000">
+    <File name="DiscountTarget.generated.cs" startTime="128372338878950000" executionTime="00:00:01.0210000" />
+    <File name="DiscountTargetServiceBase.cs.generated" startTime="128372338889190000" executionTime="00:00:01.3070000" />
+    <File name="DiscountTargetProviderBaseCore.generated.cs" startTime="128372338902270000" executionTime="00:00:00.0280000" />
+    <File name="SqlClient\SqlDiscountTargetProviderBase.generated.cs" startTime="128372338902560000" executionTime="00:00:00.0170000" />
+  </Table>
+  <Table name="ZNodeManufacturer" startTime="128372338902740000" executionTime="00:00:02.4400000">
+    <File name="Manufacturer.generated.cs" startTime="128372338902740000" executionTime="00:00:00.9340000" />
+    <File name="ManufacturerServiceBase.cs.generated" startTime="128372338912110000" executionTime="00:00:01.4480000" />
+    <File name="ManufacturerProviderBaseCore.generated.cs" startTime="128372338926600000" executionTime="00:00:00.0330000" />
+    <File name="SqlClient\SqlManufacturerProviderBase.generated.cs" startTime="128372338926940000" executionTime="00:00:00.0200000" />
+  </Table>
+  <Table name="ZNodeGateway" startTime="128372338927140000" executionTime="00:00:02.4160000">
+    <File name="Gateway.generated.cs" startTime="128372338927140000" executionTime="00:00:01.0330000" />
+    <File name="GatewayServiceBase.cs.generated" startTime="128372338937490000" executionTime="00:00:01.3290000" />
+    <File name="GatewayProviderBaseCore.generated.cs" startTime="128372338950800000" executionTime="00:00:00.0310000" />
+    <File name="SqlClient\SqlGatewayProviderBase.generated.cs" startTime="128372338951110000" executionTime="00:00:00.0180000" />
+  </Table>
+  <Table name="ZNodeCoupon" startTime="128372338951300000" executionTime="00:00:02.3690000">
+    <File name="Coupon.generated.cs" startTime="128372338951300000" executionTime="00:00:00.9400000" />
+    <File name="CouponServiceBase.cs.generated" startTime="128372338960740000" executionTime="00:00:01.3710000" />
+    <File name="CouponProviderBaseCore.generated.cs" startTime="128372338974470000" executionTime="00:00:00.0310000" />
+    <File name="SqlClient\SqlCouponProviderBase.generated.cs" startTime="128372338974780000" executionTime="00:00:00.0210000" />
+  </Table>
+  <Table name="ZNodeOrderLineItem" startTime="128372338974990000" executionTime="00:00:02.6060000">
+    <File name="OrderLineItem.generated.cs" startTime="128372338975000000" executionTime="00:00:01.1960000" />
+    <File name="OrderLineItemServiceBase.cs.generated" startTime="128372338986990000" executionTime="00:00:01.3550000" />
+    <File name="OrderLineItemProviderBaseCore.generated.cs" startTime="128372339000560000" executionTime="00:00:00.0200000" />
+    <File name="SqlClient\SqlOrderLineItemProviderBase.generated.cs" startTime="128372339000760000" executionTime="00:00:00.0290000" />
+  </Table>
+  <Table name="ZNodeHighlight" startTime="128372339001050000" executionTime="00:00:02.3730000">
+    <File name="Highlight.generated.cs" startTime="128372339001050000" executionTime="00:00:00.9440000" />
+    <File name="HighlightServiceBase.cs.generated" startTime="128372339010510000" executionTime="00:00:01.3820000" />
+    <File name="HighlightProviderBaseCore.generated.cs" startTime="128372339024340000" executionTime="00:00:00.0170000" />
+    <File name="SqlClient\SqlHighlightProviderBase.generated.cs" startTime="128372339024520000" executionTime="00:00:00.0250000" />
+  </Table>
+  <Table name="ZNodeOrder" startTime="128372339024780000" executionTime="00:00:02.7050000">
+    <File name="Order.generated.cs" startTime="128372339024780000" executionTime="00:00:01.0330000" />
+    <File name="OrderServiceBase.cs.generated" startTime="128372339035140000" executionTime="00:00:01.6000000" />
+    <File name="OrderProviderBaseCore.generated.cs" startTime="128372339051150000" executionTime="00:00:00.0270000" />
+    <File name="SqlClient\SqlOrderProviderBase.generated.cs" startTime="128372339051430000" executionTime="00:00:00.0400000" />
+  </Table>
+  <summary>
+    <objectCount>252</objectCount>
+    <messageCount>0</messageCount>
+  </summary>
+</NetTiersReport>

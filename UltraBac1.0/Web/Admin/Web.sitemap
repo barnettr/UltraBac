@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+	<siteMapNode url="~/admin/default.aspx" title="Admin"  description="">
+		   
+		<siteMapNode url="~/admin/secure/default.aspx" title="Dashboard"  description="" />
+		
+		<siteMapNode url="~/admin/secure/catalogmanager.aspx" title="Catalog"  description="" >
+			<siteMapNode url="~/admin/secure/catalog/product_category/list.aspx" title="Categories"  description="" />
+			<siteMapNode url="~/admin/secure/catalog/product_addons/list.aspx" title="Product Add-Ons"  description="">
+				<siteMapNode url="~/admin/secure/catalog/product_addons/view.aspx" title="View Details"  description="" />
+			</siteMapNode>
+			
+			<siteMapNode url="~/admin/secure/catalog/product/list.aspx" title="Products"  description="" >
+				<siteMapNode url="~/admin/secure/catalog/product/view.aspx" title="Product Details"  description="" />
+			</siteMapNode>
+			
+			<siteMapNode url="~/admin/secure/catalog/product_manufacturer/list.aspx" title="Manufacturers"  description="" />		
+			
+			<siteMapNode url="~/admin/secure/catalog/product_type/list.aspx" title="Product Types"  description="" >
+				<siteMapNode url="~/admin/secure/catalog/product_type/view.aspx" title="Attributes"  description="" />
+			</siteMapNode>
+			
+			<siteMapNode url="~/admin/secure/catalog/product_Attribute_Types/list.aspx" title="Product Attributes"  description="" />
+		</siteMapNode>
+
+		<siteMapNode url="~/admin/secure/ordermanager.aspx" title="Sales"  description="" >
+			<siteMapNode url="~/admin/secure/orders/list.aspx" title="Orders"  description="" >
+				<siteMapNode url="~/admin/secure/orders/view.aspx" title="Order Detail"  description="" />
+			</siteMapNode>
+			
+			<siteMapNode url="~/admin/secure/customers/list.aspx" title="Accounts"  description="" >
+				<siteMapNode url="~/admin/secure/customers/view.aspx" title="Account Details"  description="" />
+			</siteMapNode>
+			
+			<!--<siteMapNode url="~/admin/secure/cases/list.aspx" title="Service Requests"  description="" >
+				<siteMapNode url="~/admin/secure/cases/view.aspx" title="View Case Details"  description="" />
+			</siteMapNode>-->
+		</siteMapNode>
+
+		<siteMapNode url="~/admin/secure/contentmanager.aspx" title="Design"  description="" >
+			<siteMapNode url="~/admin/secure/template/SiteTheme.aspx" title="Site Theme" description=""/>
+			<siteMapNode url="~/admin/secure/settings/messages/default.aspx" title="Edit Messages"  description="" />
+			<siteMapNode url="~/admin/secure/pages/default.aspx" title="Manage Pages"  description="" />
+			<siteMapNode url="~/admin/secure/news/default.aspx" title="Manage Newswire" description="" />
+			<siteMapNode url="~/admin/secure/events/default.aspx" title="Manage Events" description="" />
+			<siteMapNode url="~/admin/secure/template/CSSEditor.aspx" title="Edit CSS"  description="" />
+		</siteMapNode>
+
+		<siteMapNode url="~/admin/secure/settingsmanager.aspx" title="Settings"  description="" >
+			<siteMapNode url="~/admin/secure/settings/general/default.aspx" title="Global Settings"  description="" />
+			<siteMapNode url="~/admin/secure/settings/payment/default.aspx" title="Payment Options"  description="" />
+			
+			<siteMapNode url="~/admin/secure/settings/shipping/default.aspx" title="Shipping Options"  description="" >
+				<siteMapNode url="~/admin/secure/settings/shipping/view.aspx" title="View Shipping Details"  description="" />
+			</siteMapNode>
+			
+			<siteMapNode url="~/admin/secure/settings/taxes/default.aspx" title="Tax Settings"  description="" />
+			<!--<siteMapNode url="~/admin/secure/catalog/coupons/list.aspx" title="Coupons"  description="" />-->
+		</siteMapNode>
+
+		<siteMapNode url="~/admin/secure/maintmanager.aspx" title="Maintenance"  description="" >
+			<siteMapNode url="~/admin/secure/settings/batchimageresizer/batchimageresizer.aspx" title="Batch Image Resizer" description=""/>
+			<siteMapNode url="~/admin/secure/catalog/DeleteCatalog.aspx" title="Delete Catalog Data"  description="" />
+			<siteMapNode url="~/admin/secure/ChangePassword.aspx" title="Change Password"  description="" />
+		</siteMapNode>
+		
+	</siteMapNode>
+</siteMap>

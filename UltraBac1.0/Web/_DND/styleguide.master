@@ -1,0 +1,4 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Themes/Default/common/main.master" %>
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" Runat="Server">
+    <asp:ContentPlaceHolder
+</asp:Content>

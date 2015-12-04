@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="CustomerServicePhone.ascx.cs" Inherits="Controls_Placeholders_CustomerServicePhone" %>
+<asp:Label ID="uxCustomerServicePhone" runat="server" Text="Label"></asp:Label>

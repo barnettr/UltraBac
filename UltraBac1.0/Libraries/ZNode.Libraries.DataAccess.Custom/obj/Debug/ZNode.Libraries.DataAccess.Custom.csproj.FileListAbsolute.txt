@@ -1,0 +1,5 @@
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Custom\bin\Debug\ZNode.Libraries.DataAccess.Custom.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Custom\bin\Debug\ZNode.Libraries.DataAccess.Custom.pdb
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Custom\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Custom\obj\Debug\ZNode.Libraries.DataAccess.Custom.dll
+C:\Projects\UltraBac\UltraBac1.0\Libraries\ZNode.Libraries.DataAccess.Custom\obj\Debug\ZNode.Libraries.DataAccess.Custom.pdb

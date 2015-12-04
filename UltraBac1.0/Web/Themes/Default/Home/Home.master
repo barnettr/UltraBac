@@ -1,0 +1,25 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="../common/main.master" CodeFile="Home.master.cs" Inherits="Themes_Default_Common_main" %>
+<%@ MasterType VirtualPath="~/Themes/Default/common/main.master" %>
+<%@ Register Src="Home.ascx" TagName="Home" TagPrefix="ZNode" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadPlaceHolder" runat="server">
+
+	<asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server" />
+	
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+<h1 class="hide">UltraBac Software</h1>
+		<div id="Content" class="Home_Content">
+			
+			<ZNode:Content ID="uxContent" runat="server" ShowH1="false" PageName="home" Visible="true"/>
+			<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+	
+		<!-- /Content --></div>
+		
+		<asp:ContentPlaceHolder ID="RightColumn" runat="server" />
+  
+  <POP:RightSidebar ID="uxRightSidebar" ShowNews="true" ShowSupport="false" ShowResources="false" ShowCertifications="true" runat="server" />
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="TurnOffBreadcrumb" />

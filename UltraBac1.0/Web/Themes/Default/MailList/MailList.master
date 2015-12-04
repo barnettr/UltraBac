@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" AutoEventWireup="true" CodeFile="MailList.master.cs" Inherits="Themes_Default_MailList_MailList" %>
+
+<%--Alternative way to turn of breadcrumbs, may also use property in main.master--%>
+<asp:Content ID="Content1" ContentPlaceHolderID="TurnOffBreadcrumb" Runat="Server">
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="TurnOffNewsletter"></asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+
+<div id="Nav_Sub"></div>
+<div id="Content">
+	<Ult:NewsletterSignup runat="server" />
+</div>
+
+</asp:Content>

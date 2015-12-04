@@ -1,0 +1,47 @@
+/**
+ * ie.css
+ * Custom styles applied to ALL versions of Internet Explorer.  See also ie6.css.
+*/
+
+
+
+/* IE screws up the bottom margin on our rounded boxes */
+#Content .outline_fancy .bl { margin: 0 0 0 -1px; }
+#Content .outline_fancy .br { margin: 0 -1px 0 0; }
+#Content .outline_fancy .content { padding-bottom: 0.05em;  }
+
+
+/* amazing how screwed up IE's box model is */
+#Content .outline { zoom: 1; }
+	#Content .outline .tl { padding-right: -1px;  }
+	#Content .outline .tr { margin-top: 0; }
+	#Content .outline .content { margin-bottom: -1.5em; }
+	
+/* disable clear: both, else there's excessive spacing above div */
+#Content .Purchase_Info .info { clear: none; }
+#Nav_Site ul li ul li {
+	width: 200px;
+}
+#Sidebar_Find_A_Product .input_rounded .inner select {
+	top: 4px;
+}
+#Header_Stuff .menus div#nav_topics ul li:hover ul {
+	left: 0;
+}
+#Header_Stuff .menus div#nav_topics ul li ul,
+#Sidebar div#nav_products ul li ul {
+	clear: left;
+	margin-top: -12px;
+}
+#Sidebar .input_rounded .inner input {
+	padding: 0.25em 0 0;
+}
+
+div.flexBucket-mid {zoom: 1;}
+
+ol.form li input.radio,
+.form ul.goofy input {
+	margin-bottom:3px !important;
+}
+
+div.tab_content {zoom: 1;}

@@ -1,0 +1,81 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:clients.htm" caret="588" fromTop="4" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:RadControls/d:Editor/d:Controls/f:TableBorderControl.ascx" caret="476" fromTop="3" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:maintenance-products.htm" caret="879" fromTop="19" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:ecommerce-product-offerings.htm" caret="756" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:resellers-pricing.htm" caret="2253" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Admin/d:Secure/f:Default.aspx" caret="4035" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Admin/d:Secure/d:catalog/d:product/f:list.aspx" caret="366" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_DND/f:buttons.aspx" caret="477" fromTop="10" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_DND/f:styleguide.htm" caret="16532" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:Home.htm" caret="1820" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:support-form.htm" caret="0" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:licensing-form.htm" caret="286" fromTop="3" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_controls/d:forms/f:resellersOrder.ascx" caret="17849" fromTop="28" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_controls/d:forms/f:licensingVolume.ascx" caret="6140" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_controls/d:forms/f:licensingForm.ascx" caret="6108" fromTop="5" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:ie7.css" caret="208" fromTop="11" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Config/f:MessageConfig.xml" caret="53589" fromTop="11" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:licensing-faq.htm" caret="4473" fromTop="22" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:js/d:IE7_0_9/f:ie7-server.css" caret="786" fromTop="16" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:RadControls/d:Editor/d:Localization/d:en-US/f:Help.ascx" caret="12473" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:js/d:lightwindow/d:css/f:lightwindow.css" caret="6599" fromTop="15" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:contact.htm" caret="58" fromTop="3" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Admin/d:Themes/d:Standard/f:style.css" caret="0" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Content.aspx" caret="0" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Themes/d:Default/d:Common/f:main.master" caret="0" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Themes/d:Default/d:Content/f:Content.master" caret="0" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Web.config" caret="2475" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_controls/d:template/f:Head.ascx" caret="0" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:_main.css" caret="39655" fromTop="8" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="13" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:clients.htm" caret="6342" fromTop="4" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Web.config" caret="15903" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Web.config" caret="15903" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Config/f:MessageConfig.xml" caret="53589" fromTop="27" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Config/f:MessageConfig.xml" caret="53589" fromTop="27" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Config/f:MessageConfig.xml" caret="53589" fromTop="23" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_controls/d:forms/f:licensingForm.ascx" caret="6115" fromTop="14" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_controls/d:forms/f:licensingVolume.ascx" caret="6140" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Web.config" caret="15903" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:_main.css" caret="50673" fromTop="23" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:ie7.css" caret="215" fromTop="11" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:licensing-faq.htm" caret="4473" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Config/f:MessageConfig.xml" caret="53589" fromTop="11" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Web.config" caret="15903" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Web.config" caret="15903" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:Data/d:Default/d:Content/f:licensing-faq.htm" caret="4473" fromTop="13" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:js/d:lightwindow/d:css/f:lightwindow.css" caret="17101" fromTop="15" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="0" fromTop="0" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/f:Web.config" caret="2475" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="25" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="19" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="30" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="4" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="8" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="17" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="6" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="16" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="30" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="20" />
+      <File id="22850F20-255A-409F-8557-7946E0E4536B/d:_inc/d:css/f:print.css" caret="610" fromTop="13" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+</Configuration>

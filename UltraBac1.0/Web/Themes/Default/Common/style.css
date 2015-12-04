@@ -1,0 +1,418 @@
+﻿/***********************************************************/
+/*	ZNode Storefront Stylesheet
+/*	Copyright 2004-2007, www.znode.com, All Rights Reserved.
+/***********************************************************/
+
+/**************************************************/
+/* GLOBAL                                  
+/**************************************************/
+body { margin-top: 0px; background-color: #ffffff; font-family: verdana,helvetica,sans-serif; font-size: 8pt; color: #666666; text-align: left; }
+
+/**************************************************/
+/* PAGE SECTIONS                                  
+/**************************************************/
+#Container { width: 760px; margin-left: auto; margin-right: auto; margin-top: 10px; background-color: #ffffff; float: none; border-left: solid 15px white; border-right: solid 15px white; text-align: left; padding-bottom: 20px; }
+#Header { height: 55px; padding: 5px; text-align: left; }
+#BreadCrumb {text-align: left; vertical-align: middle; background-color: #E2E2E2;padding:1px 5px 2px 5px;font-size: 11px;font-family:Arial;font-weight:bold;}
+#Logo { }
+#LeftColumn { margin-top: 5px; }
+#MiddleColumn { border-left: #dddddd 1px solid; padding-left: 15px; }
+/* Added this for Search and BreadCrumbs with this marginal settings in the Category.master */
+#MiddleColumn .Field{ margin-top:5px; margin-bottom: 5px; }
+#ContentColumn { padding-top: 10px; padding-right: 25px; padding-left: 25px; padding-bottom: 25px; margin-bottom: 1px; margin-left: 1px; border-bottom: 1px solid #C0C0C0;}
+#Footer { padding-right: 5px; padding-left: 5px; padding-bottom: 10px; padding-top: 10px; border-right-style: none; border-left-style: none; border-bottom-style: none; background-color: White; border-top: #666666 4px solid; margin-bottom: 10px; margin-top: 20px; }
+#CustomerService { font-size: 8pt; color: #696969; margin-right: 0px; margin-bottom: 5px; font-weight: normal; }
+#PoweredByZNode{ float:none; margin:10px; text-align:center; }
+
+/**************************************************/
+/* Container SECTIONS
+/**************************************************/
+#Container .TableContainer { width:100%; }
+#Container .TableContainer .ClearImageLeft{ width:150px; height:1px; }
+#Container .TableContainer .ClearImageRight{ width:600px; height:1px; text-align:left; }
+
+/**************************************************/
+/* Error Page Styles
+/**************************************************/
+#ErrorContainer { font-family:Arial; width:760px; font-size:12px; }
+#ErrorContainer .Text{ color:#ff0000;font-size:13px; margin-bottom:13px; margin-left:10px;  margin-right:10px; }
+#ErrorContainer .Description { margin-bottom:20px; margin-left:10px; margin-right:10px }
+#ErrorContainer A:link {color:Blue;font-size:13px;text-decoration:underline;}
+#ErrorContainer A:Visited {color:Blue;font-size:13px;text-decoration:underline;}
+#ErrorContainer A:hover {color:Blue;font-size:13px;text-decoration:underline;}
+
+/**************************************************/
+/* GLOBAL STYLES                                 
+/**************************************************/
+
+h1 { font-size: 17px; margin-bottom: 10px; margin-top:0px; background-color:#6074A6;font-family:Arial;padding:10px 10px 10px 10px;}
+h2 { font-size: 16px; margin-bottom: 5px; }
+h3 { font-size: 14px; margin-bottom: 5px; }
+h4 {}
+/*Add new for My account page */
+h5 { margin-top: 10px; margin-bottom: 10px; font-weight: bold; font-size: 11px; color: #444444; padding-right: 5px; padding-left: 5px; padding-bottom: 3px; padding-top: 3px; background-color: #eaebeb; border-left: #d3d3d3 1px solid; border-bottom: #8e9fba 1px solid; border-top-width: 1px; border-top-color: #d3d3d3; border-right-width: 1px; border-right-color: #d3d3d3; }
+select {}
+.bullet {}
+.plain 	{ list-style-type: none; }
+hr { border: 0; width: 100%; color: #4682b4; height: 1px; }
+a:link {color: #333333; }
+a:Visited {color: #333333; }
+a:Hover {color: #666666;}
+p { font-size: 8pt; }
+big { font-size: 10pt; }
+small { font-size: 7pt; }
+.Error { font-weight: bold; color: #ff0000; font-size: 11px; margin-bottom: 5px; margin-top: 5px; }
+.FailureText {color:Red;}
+.Success{ font-weight: bold; color: Green; font-size: 13px;  white-space:pre; background-image: url(../../Images/icons/check.png); background-repeat: no-repeat; padding-left: 15px; margin-bottom: 10px; margin-top: 5px; }
+.Optional {font-weight: bold; color:  Blue; font-size: 13px; white-space:pre;  background-image: url(../../Images/icons/warning_small.gif); background-repeat: no-repeat; padding-left: 15px; margin-bottom: 10px; margin-top: 5px; }
+.AddOnMessage { color: #cb5d2a; font-size:11px; }
+
+/**************************************************/
+/* MENU                                          
+/**************************************************/
+#Menu { font-size: 11px; color: white; font-family: Arial; text-align: left; background-color: #7C7C7C; font-weight: bold; text-transform: capitalize; padding: 0px; margin: 0px; border-bottom: #c0c0c0 2px solid; }
+#Menu A:link { text-decoration: none;}
+#Menu A:Visited { text-decoration: none; }
+#Menu A:Hover { text-decoration: none; }
+#Menu .StaticMenuStyle { }
+#Menu .StaticMenuItemStyle { font-size: 11px; color: white; font-weight: bold; padding-right: 5px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px; }
+#Menu .StaticHoverStyle { background-color: #666666; } 
+#Menu .StaticSelectedStyle { }
+#Menu .DynamicMenuStyle {}
+#Menu .DynamicMenuItemStyle {background-color: #7C7C7C; font-size: 11px;color: white; font-weight: bold; padding:5px 5px 5px 5px;border-top :dotted 1px white;}
+#Menu .DynamicHoverStyle {background-color:#666666;} 
+#Menu .DynamicSelectedStyle { }
+
+/**************************************************/
+/* GRID                                           
+/**************************************************/
+.Grid { border-bottom: #c0c0c0 1px solid; padding-bottom: 10px;width:100%;}
+.Grid a { text-decoration: none; color: #003399; }
+.Grid a:link { text-decoration: none; color: #003399; }
+.Grid a:hover { text-decoration: underline; color: #F60; }
+.Grid a:visited { text-decoration: none; color: #003399; }
+.FooterStyle { background-color: #507CD1; color: white; font-weight: bold; }
+.RowStyle { background-color: #EFF3FB; }
+.PagerStyle { background-color: #fbfbfb; text-align: center; }
+.PagerStyle a:link { text-decoration: underline; }
+.PagerStyle a:hover { text-decoration: underline; }
+.PagerStyle a:visited { text-decoration: underline; }
+.HeaderStyle { background-color: #507CD1; color: white; font-weight: bold; text-align: left; }
+.AlternatingRowStyle { background-color: #FFFFFF; }
+
+/**************************************************/
+/* SITE LINKS                        
+/**************************************************/
+#SiteLinks { text-align: right; vertical-align: middle; margin-right: -10px; padding-right: 2px; padding-left: 2px; padding-bottom: 2px; padding-top: 4px; font-size: 8pt; font-family: arial; font-weight: normal; text-transform: capitalize; text-decoration: none; margin-bottom: 10px; }
+#SiteLinks .Link { margin-left:4px; margin-right:5px;letter-spacing:0.5px; }
+#SiteLinks .Link A:link { color: #666666; text-decoration: none; margin-right:2px; }
+#SiteLinks .Link A:visited { color: #666666; text-decoration: none;margin-right:2px;}
+#SiteLinks .Link A:hover { text-decoration: none; color: #a52a2a; }
+#SiteLinks .CartItem {color:#D98B64;margin-right:0px;}
+
+/*************************************/
+/* BreadCrumb
+/*************************************/
+#BreadCrumb {padding-left:11px;border-top:2px white solid;letter-spacing:0.2px;}
+#BreadCrumb A:link { color: #7C7C7C; text-decoration: none; margin-right:2px; }
+#BreadCrumb A:visited { color: #7C7C7C; text-decoration: none;margin-right:2px;}
+#BreadCrumb A:hover { text-decoration: none; color: Black; }
+
+/**************************************************/
+/* QUICK SEARCH                                 
+/**************************************************/
+#QuickSearch { }
+#QuickSearch .Title { color: #404040; font-weight: bold;margin:0px 18px 5px 0px;font-size: 11px; font-family: Arial; }
+#QuickSearch .Button {margin:0px 5px 0px 8px;} 
+#QuickSearch .TextBox {border:solid 1px #404040;}
+
+/**************************************************/
+/* PRODUCT SEARCH                                 
+/**************************************************/
+.ProductSearch{}
+.ProductSearch .Description{margin-bottom:15px;}
+.ProductSearch .Form .Field {font-weight: bold; padding-right: 10px;padding-bottom:10px; }
+.ProductSearch .Form .Value {padding-bottom:10px;}
+
+
+/**************************************************/
+/* CATEGORY DETAIL                                 
+/**************************************************/
+.CategoryDetail .Title { color: #EDFFFF; font-size: 14px; margin-bottom: 5px; margin-top: 0px; background-color: #6074A6; font-family: Arial; padding-right: 10px; padding-left: 10px; font-weight: bold; padding-bottom: 10px; padding-top: 10px; }
+.CategoryDetail .Description { margin-top: 15px;}
+
+.CategoryDetail .SubCategoryList { margin-top: 0px; margin-bottom: 20px; margin-top: 15px; }
+.CategoryDetail .SubCategoryList .Title { color: #EDFFFF; font-size: 14px; margin-bottom: 5px; margin-top: 0px; background-color: #666666; font-family: Arial; padding-right: 10px; padding-left: 10px; font-weight: bold; padding-bottom: 5px; padding-top: 5px; }
+.CategoryDetail .SubCategoryListItem { padding-right: 0px; padding-bottom: 0px; vertical-align: top; margin-bottom: 30px; border-bottom: #dddddd 1px; padding-top: 0px; margin-right: 30px; padding-left: 0px; margin-left: 5px; }
+.CategoryDetail .SubCategoryListItem .ShortDescription { font-weight: normal; font-size: 12px; text-align:center; margin-bottom: 10px; padding-top: 0px; color: #333333; }
+.CategoryDetail .SubCategoryListItem .CategoryLink {font-weight: normal; font-size: 12px; text-align:center; margin-bottom: 10px; padding-top: 0px; color: #6b7aa2; }
+.CategoryDetail .SubCategoryListItem .CategoryLink A:link { text-decoration: none; color: #333333; }
+.CategoryDetail .SubCategoryListItem .CategoryLink A:Visited { text-decoration: none; color: #333333; }
+.CategoryDetail .SubCategoryListItem .CategoryLink A:Hover { text-decoration: none; color: #666666; }
+
+.CategoryDetail .ProductList { text-align: left; }
+.CategoryDetail .ProductListItem { vertical-align: top; text-align: center; padding-right: 15px; padding-left: 15px; padding-bottom: 0px; padding-top: 0px; border-right: #eff3f6 8px solid; border-top: #eff3f6 8px solid; border-left: #eff3f6 8px solid; border-bottom: #eff3f6 8px solid; margin-top: 10px; margin-bottom: 10px; margin-left: 5px; }
+.CategoryDetail .ProductListItem .Price { text-align: center; font-weight: bold; font-size: 11px; color: #cc6600; }
+.CategoryDetail .ProductListItem .RegularPrice { text-align: center; font-weight: bold; font-size: 11px; color: #666666; text-decoration: line-through; }
+.CategoryDetail .ProductListItem .SalePrice { text-align: center; font-weight: bold; font-size: 11px; color: #ff0000; padding-top: 5px; }
+.CategoryDetail .ProductListItem .Image { margin-bottom: 10px; }
+.CategoryDetail .ProductListItem .DetailLink { margin-bottom:10px; font-size: 11px;}
+.CategoryDetail .ProductListItem .DetailLink A:link { color: #666666; text-decoration: underline; }
+.CategoryDetail .ProductListItem .DetailLink A:Visited { color: #666666; text-decoration: underline;  }
+.CategoryDetail .ProductListItem .DetailLink A:Hover { color: #0000ff; text-decoration: underline; }
+
+.CategoryDetail .Paging { text-align: right; margin-top: 15px; margin-bottom: 10px; font-size: 11px; color: #444444; padding-right: 5px; padding-left: 5px; padding-bottom: 3px; padding-top: 3px; border-top-width: 1px; border-top-color: #d3d3d3; border-right-width: 1px; border-right-color: #d3d3d3; border-left-width: 1px; border-left-color: #d3d3d3; border-bottom-width: 1px; border-bottom-color: #8e9fba; }
+.CategoryDetail .Sorting .Label { font-weight: bold; margin-right: 5px; }
+.CategoryDetail .Sorting select { font-size: 8pt; font-family: verdana; }
+
+/**************************************************/
+/* HOME PAGE - FEATURED CATEGORIES                                
+/**************************************************/
+.HomeFeaturedCategories .Title { color: #EDFFFF; font-size: 14px; margin-bottom: 5px; margin-top: 0px; background-color: #666666; font-family: Arial; padding-right: 10px; padding-left: 10px; font-weight: bold; padding-bottom: 5px; padding-top: 5px; }
+.HomeFeaturedCategories .Description { margin-top: 15px; font-size: 8pt; }
+.HomeFeaturedCategories .SubCategoryList { margin-top: 0px; margin-bottom: 20px; margin-top: 15px; }
+.HomeFeaturedCategories .SubCategoryListItem { padding-right: 24px; padding-bottom: 0px; vertical-align: top; margin-bottom: 20px; border-bottom: #dddddd 1px; padding-top: 0px; margin-right: 20px; padding-left: 0px; margin-left: 5px; }
+.HomeFeaturedCategories .SubCategoryListItem .CategoryLink { text-align:center; padding-top:5px;font-weight: normal; font-size: 12px; margin-bottom: 10px; color: #6b7aa2; }
+.HomeFeaturedCategories .SubCategoryListItem .CategoryLink A:link { text-decoration: none; color: #333333; }
+.HomeFeaturedCategories .SubCategoryListItem .CategoryLink A:Visited { text-decoration: none; color: #333333; }
+.HomeFeaturedCategories .SubCategoryListItem .CategoryLink A:Hover { text-decoration: none; color: #666666; }
+.HomeFeaturedCategories .SubCategoryListItem .Image { }
+
+
+/**************************************************/
+/* FOOTER - OVERRIDE                                
+/**************************************************/
+#FooterLinks { text-align: center; vertical-align: middle; margin-right: 3px;margin-bottom:10px;margin-left: 3px; padding-bottom: 10px; padding-top: 2px; font-size: 8pt; font-family: Verdana; font-weight: normal; word-spacing:1.5px; }
+#FooterLinks .Link { margin-left:2px; margin-right:2px;letter-spacing:0px; }
+#FooterLinks .Link A:link {color: #7C7C7C;  text-decoration: none; margin-right:2px; }
+#FooterLinks .Link A:visited { color: #7C7C7C; text-decoration: none; }
+#FooterLinks .Link A:hover { text-decoration: none; color: #a52a2a; }
+
+/**************************************************/
+/* PRODUCT DETAIL                                 
+/**************************************************/
+.ProductDetail { margin-bottom: 20px; }
+.ProductDetail .Title { color: #EDFFFF; font-size: 14px; margin-bottom: 10px; margin-top: 0px; background-color: #6074A6; font-family: Arial; padding-right: 10px; padding-left: 10px; font-weight: bold; padding-bottom: 10px; padding-top: 10px; }
+.ProductDetail .Image { margin-bottom: 10px; text-align: center; border-right: #eff3f6 8px solid; padding-right: 10px; border-top: #eff3f6 8px solid; padding-left: 10px; padding-bottom: 10px; border-left: #eff3f6 8px solid; padding-top: 10px; border-bottom: #eff3f6 8px solid; }
+.ProductDetail .Label { font-weight: bold; color: #cb5d2a; margin-right: 5px; }
+.ProductDetail .Zoom { margin-bottom: 20px; text-align: center; }
+.ProductDetail .Description { margin-top: 20px; margin-bottom: 20px; font-size: 8pt;}
+.ProductDetail .PriceBox { margin: 0px 0px 0px 0px; font-weight: normal; padding-right: 0px; padding-left: 0px; padding-bottom: 0px; padding-top: 0px; text-align: center; }
+.ProductDetail .Price {font-size: 14px;  font-weight:bold; color:#cb5d2a; font-family: arial; }
+.ProductDetail .RegularPrice { font-size: 14px; font-weight: normal; color: #666666; text-decoration: line-through; margin-right: 5px; font-family: arial;}
+.ProductDetail .SalePrice {font-size: 14px; font-weight:bold; color:#cb5d2a; font-family: arial; }
+.ProductDetail .StockMsg { color: #6074A6; font-family: arial; margin-bottom: 10px; font-weight: bold; }
+.ProductDetail .CallForPriceMsg {font-size: 14px;  font-weight:bold; color:#cb5d2a;  }
+.ProductDetail .ProductNumber { font-weight: bold; font-size: 14px; font-family: arial; color: #6b7aa2; }
+.ProductDetail .DetailButton { margin-bottom: 10px; }
+.ProductDetail .Options { padding-right: 0px; border-top: #cccccc 1px solid; padding-left: 0px; padding-bottom: 10px; padding-top: 10px; margin-top: 30px; margin-bottom: 20px; border-left-width: 1px; border-left-color: #cccccc; border-bottom-width: 1px; border-bottom-color: #cccccc; border-right-width: 1px; border-right-color: #cccccc; }
+.ProductDetail .OptionsTitle { background-color: #6b7aa2; color: white; padding-left: 5px; font-weight: bold; font-size: 10px; padding-bottom: 3px; padding-top: 3px; }
+.ProductDetail .OptionsLabel { color: #6074A6; font-family: arial; margin-bottom: 10px; font-weight: bold; margin-right: 5px; }
+.ProductDetail .Attribute { padding-right: 10px; margin-right: 10px; }
+.ProductDetail .Related { margin-top: 20px; }
+.ProductDetail .Manufacturer{font-size:11px; font-weight:bold; color:#cb5d2a; }
+.ProductDetail .AddToCartButton { margin-left: 10px;}
+.ProductDetail .StatusMsg{font-size:11px; font-weight:bold; color:#cb5d2a; }
+.ProductDetail .Tabs{margin-top: 20px; margin-bottom: 20px;  font-size: 8pt; }
+.ProductDetail .Features {margin-top: 20px; margin-bottom: 20px; font-size: 8pt; }
+.ProductDetail .Specifications { margin-top: 20px; margin-bottom: 20px; font-size: 8pt;}
+.ProductDetail .AdditionalInformation {margin-top: 20px; margin-bottom: 20px; font-size: 8pt; }
+
+/**************************************************/
+/* Product Add-Ons
+/**************************************************/
+#Add-Ons  .FieldStyle { padding-top:10px;}
+#Add-Ons  .ValueStyle { padding-left:5px; padding-top:10px;}
+
+/**************************************************/
+/* Product Alternate Images                                
+/**************************************************/
+.ProductAdditionalImages { margin-top: 40px; }
+.ProductAdditionalImages .Image {border:0px; margin:0px; padding: 4px 5px 4px 5px; text-align:center; cursor:pointer;}
+.ProductAdditionalImages .Name { text-align:center; padding-bottom:8px; }
+.ProductAdditionalImages .ItemStyle{vertical-align:bottom;}
+
+/********************/
+/*AJAX Tab 
+/*******************/
+#Tab .CustomTabStyle .ajax__tab_body {font-family:verdana,tahoma,helvetica;font-size:10pt;border-top:#879acf 5px solid;background-color:#ffffff; padding-top:5px;padding-right:13px;}
+#Tab .CustomTabStyle .ajax__tab_outer {padding-right:4px;background:url(../../../Images/buttons/Rplain.gif) no-repeat right; background-position:top right;}
+#Tab .CustomTabStyle .ajax__tab_inner {padding-left:4px;background:url(../../../Images/buttons/Lplain.gif) no-repeat;}
+#Tab .CustomTabStyle .ajax__tab_tab {height:19px;margin:0;background:url(../../../Images/buttons/mplain.gif) repeat-x; padding-top:5px; padding-left:10px; padding-right:10px;}
+#Tab .CustomTabStyle .ajax__tab_hover .ajax__tab_outer {padding-right:4px;background:url(../../../Images/buttons/Rplain.gif) no-repeat right; background-position:top right;}
+#Tab .CustomTabStyle .ajax__tab_hover .ajax__tab_inner {padding-left:4px;background:url(../../../Images/buttons/Lplain.gif) no-repeat;}
+#Tab .CustomTabStyle .ajax__tab_hover .ajax__tab_tab {height:19px;background:url(../../../Images/buttons/mplain.gif) repeat-x;}
+#Tab .CustomTabStyle .ajax__tab_active .ajax__tab_outer {background:url(../../../Images/buttons/faright.gif) no-repeat right; color:White;  background-position:top right;}
+#Tab .CustomTabStyle .ajax__tab_active .ajax__tab_inner {background:url(../../../Images/buttons/faleft.gif) no-repeat;color:White;  }
+#Tab .CustomTabStyle .ajax__tab_active .ajax__tab_tab {height:19px;background:url(../../../Images/buttons/famiddle.gif) repeat-x; color:White; font-weight:600;}
+
+
+/**************************************************/
+/* CATEGORY TREEVIEW                                 
+/**************************************************/
+.CategoryTreeView { margin-bottom: 15px; padding-bottom: 5px; padding-left: 5px; }
+.CategoryTreeView A:link { text-decoration: none; }
+.CategoryTreeView A:Visited { text-decoration: none; }
+.CategoryTreeView A:Hover { text-decoration: none; }
+.CategoryTreeView .Title { color: #cb5d2a; font-weight: bold; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 10px; font-size: 9pt; font-family: verdana; }
+.CategoryTreeView .TreeView { padding-left: 10px;}
+.CategoryTreeView .NodeStyle { font-weight: normal; font-size: 8pt; font-family: verdana; padding-bottom: 2px; padding-top: 2px; color: #7777a4; padding-left: 2px; }
+.CategoryTreeView .RootNodeStyle { }
+.CategoryTreeView .HoverNodeStyle { color: red; }
+.CategoryTreeView .ParentNodeStyle {}
+.CategoryTreeView .LeafNodeStyle {}
+.CategoryTreeView .SelectedNodeStyle { font-weight: bold; }
+
+/**************************************************/
+/* SPECIALS TREEVIEW                                 
+/**************************************************/
+.SpecialsTreeView { margin-bottom: 15px; padding-bottom: 5px; padding-left: 5px; }
+.SpecialsTreeView A:link { text-decoration: underline; }
+.SpecialsTreeView A:Visited { text-decoration: underline; }
+.SpecialsTreeView A:Hover { text-decoration: underline; }
+.SpecialsTreeView .Title { color: #cb5d2a; font-weight: bold; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; font-size: 9pt; font-family: verdana; }
+.SpecialsTreeView .TreeView { padding-left: 15px; }
+.SpecialsTreeView .ParentNodeStyle {}
+.SpecialsTreeView .HoverNodeStyle {color:#666666;}
+.SpecialsTreeView .SelectedNodeStyle {}
+.SpecialsTreeView .RootNodeStyle {}
+.SpecialsTreeView .LeafNodeStyle {padding-left:3px;padding-bottom:5px;}
+.SpecialsTreeView .NodeStyle { font-size: 8pt; font-family: Verdana; padding-bottom: 2px; padding-top: 2px; color: #7777a4; }
+
+/**************************************************/
+/* SHOPPING CART                                 
+/**************************************************/
+.ShoppingCart { margin-bottom: 10px; }
+.ShoppingCart .CheckoutBox { margin-bottom: 10px; margin-top: 10px; text-align: right; }
+.ShoppingCart .CustomerService { font-weight: bold; font-size: 7pt; }
+.ShoppingCart .Grid { }
+.ShoppingCart .Grid .Header { font-weight: bold; font-size: 10px; color: white; background-color: #5d7b9d; }
+.ShoppingCart .Grid .Row { font-weight: normal; font-size: 10px; color: #333333; background-color: #F7F6F3; }
+.ShoppingCart .Grid .AlternatingRow { font-weight: normal; font-size: 10px; color: #284775; font-family: verdana; background-color: #ffffff; }
+.ShoppingCart .Grid .Description { font-size: 9px; font-family: 'Microsoft Sans Serif' ,verdana; padding-top: 5px; }
+.ShoppingCart .Update { font-weight: normal; margin-top: 10px; }
+.ShoppingCart .Quantity { width: 20px; height: 15px; }
+.ShoppingCart .CartTotals { margin-bottom: 10px; text-align: right; }
+.ShoppingCart .Apply {color:#3c3c9e;}
+.ShoppingCart .gobutton {vertical-align:middle;padding-bottom:6px;}
+.ShoppingCart .TotalBox td {padding-left:20px;text-align:right;}
+.ShoppingCart .bold {font-weight:bold;}
+
+/**************************************************/
+/* CHECKOUT                                 
+/**************************************************/
+.Checkout { padding-bottom: 30px; padding-top: 10px; padding-right: 10px; padding-left: 10px; text-align: left;margin-top:0px; }
+.Checkout .Overview { font-size: 11px; color: black; padding-bottom: 20px; }
+.Checkout .Or { font-weight: bold; font-size: 16px; color: #0099cc; font-family: arial; padding-right: 10px; padding-left: 10px; }
+.Checkout .Steps { text-align: right; height: 25px; }
+.Checkout .Steps .Passive { font-weight: bold; font-size: 11px; color: silver; margin-left: 10px; margin-right: 10px; }
+.Checkout .Steps .Active { font-weight: bold; font-size: 11px; color: #0099ff; margin-left: 10px; margin-right: 10px; padding-right: 5px; padding-left: 18px; padding-bottom: 5px; padding-top: 5px; border-top-width: 1px; border-left-width: 1px; border-left-color: #b8860b; border-bottom-width: 1px; border-bottom-color: #b8860b; border-top-color: #b8860b; border-right-width: 1px; border-right-color: #b8860b; background-position: left center; background-image: url(/web/Images/icons/arrow_right_blue_small.gif); background-repeat: no-repeat; }
+
+/**************************************************/
+/* POPUP WINDOW                                 
+/**************************************************/
+.PopupBody { text-align: center; margin-top: 0px; font-family: verdana,helvetica,sans-serif; font-size: 8pt; color: #666666; background-color: #ffffff; }
+.Popup { background-color: #ffffff; padding-right: 0px; padding-left: 0px; padding-bottom: 0px; padding-top: 0px; }
+.Popup .Header { background-color: #dcdcdc; margin-bottom: 20px; padding-right: 5px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px; font-weight: bold; font-size: 10pt; text-transform: uppercase; font-family: Verdana; }
+.Popup .Body { background-color: #ffffff; margin-bottom: 20px; min-height: 350px; }
+.Popup .Footer { background-color: #ffffff; background-color: #dcdcdc; padding-top: 5px; padding-bottom: 10px; }
+
+ /*Outermost DIV for thumbnail viewer*/
+#thumbBox{position: absolute; left: 0; top: 0; width: auto; padding: 10px; padding-bottom: 0; background: #313131; visibility: hidden; z-index: 10; cursor: hand; cursor: pointer; }
+
+ /*Footer DIV of thumbbox that contains "close" link */
+#thumbBox .footerbar{ font: bold 16px Tahoma; letter-spacing: 5px; line-height: 1.1em; color: white; padding: 5px 0; text-align: right; }
+
+/*DIV within thumbbox that holds the enlarged image */
+#thumbBox #thumbImage{ background-color: white; }
+
+ /*DIV for showing "loading" status while thumbbox is being generated*/
+#thumbLoading{ position: absolute; visibility: hidden; border: 1px solid black; background-color: #EFEFEF; padding: 5px; z-index: 5; }
+
+ 
+/**************************************************/
+/*  SPECIALS Page                                 
+/**************************************************/
+.Specials { text-align: left; margin-top: 0px; margin-bottom: 10px; }
+.Specials .Title { color: #EDFFFF; font-size: 14px; margin-bottom: 5px; margin-top: 0px; background-color: #6074A6; font-family: Arial; padding-right: 10px; padding-left: 10px; font-weight: bold; padding-bottom: 10px; padding-top: 10px; }
+.SpecialItem { vertical-align: top; text-align: center; padding-right: 15px; padding-left: 15px; padding-bottom: 10px; padding-top: 10px; border-right: #eff3f6 8px solid; border-top: #eff3f6 8px solid; border-left: #eff3f6 8px solid; border-bottom: #eff3f6 8px solid; margin-top: 10px; margin-bottom: 10px; margin-left: 5px; }
+.SpecialItem .Price { font-weight: bold; font-size: 10px;color: #cc6600; }
+.SpecialItem .RegularPrice { font-weight: bold; font-size: 10px; font-family: verdana,arial; color: #888888; text-decoration: line-through; }
+.SpecialItem .SalePrice { font-weight: bold; font-size: 10px;color: #ff0000; padding-top: 5px; }
+.SpecialItem .Image { margin-bottom: 10px; }
+.SpecialItem .DetailLink { margin-bottom: 5px; font-size: 11px;}
+.SpecialItem .DetailLink A:link { color: #666666; text-decoration: underline;  }
+.SpecialItem .DetailLink A:Visited { color: #666666; text-decoration: underline; }
+.SpecialItem .DetailLink A:Hover { color: #0000ff; text-decoration: underline; }
+
+/**************************************************/
+/*  Shop By Brand Page                                 
+/**************************************************/
+.Brand { margin: 20px 0px 10px; border-top-width: 1px; text-align: left; }
+.Brand .Title { color: #EDFFFF; font-size: 14px; margin-bottom: 5px; margin-top: 0px; background-color: #6074A6; font-family: Arial; padding-right: 10px; padding-left: 10px; font-weight: bold; padding-bottom: 10px; padding-top: 10px; }
+.BrandItem { padding-right: 10px; padding-bottom: 5px; vertical-align: top; padding-top: 5px; padding-left: 10px; border-top-width: 1px; border-left-width: 1px; border-left-color: #c0c0c0; border-bottom-width: 1px; border-bottom-color: #c0c0c0; border-top-color: #c0c0c0; border-right-width: 1px; border-right-color: #c0c0c0; margin-left: 10px; margin-right: 10px; text-align: center; }
+.BrandItem .Price { font-weight: bold; font-size: 10px;color: #cc6600; }
+.BrandItem .RegularPrice { font-weight: bold; font-size: 10px; font-family: verdana,arial; color: #888888;text-decoration: line-through;}
+.BrandItem .SalePrice { font-weight: bold; font-size: 10px;color: #ff0000; padding-top: 5px; }
+.BrandItem .Image { margin-bottom: 10px; }
+.BrandItem .DetailLink { margin-bottom: 5px; }
+.BrandItem .DetailLink A:link { color: #666666; text-decoration: underline; font-size: 10px; }
+.BrandItem .DetailLink A:Visited { color: #666666; text-decoration: underline; font-size: 10px;}
+.BrandItem .DetailLink A:Hover { color: #0000ff; text-decoration: underline; font-size: 10px;}
+
+
+/**************************************************/
+/* FORMS                                         
+/**************************************************/
+.Form {}
+.FormTitle { font-weight: bold; font-size: 12px; color: #7C7C7C; background-color:#EAEBEB; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; }
+.Form .Search { background-color: #f1f1f1; padding-right: 10px; padding-left: 10px; padding-bottom: 20px; padding-top: 10px; border-right: #b5b4b5 1px solid; border-top: #b5b4b5 1px solid; border-left: #b5b4b5 1px solid; border-bottom: #b5b4b5 1px solid; margin-top: 5px; margin-bottom: 5px; }
+.Form .Asterix { color: red; }
+.Form .HeaderStyle { font-weight: bold; font-size: 11px; background-color: #e6e6e6; color: #333333; margin-bottom: 5px; margin-top: 10px; padding-bottom: 3px; padding-top: 3px; padding-left: 5px; padding-right: 5px; }
+.Form .Row { padding-bottom: 10px; }
+.Form .FieldStyle { display: block; white-space: nowrap; font-size: 11px; font-weight: bold; color: #4b4b4b; text-align: right; margin-bottom: 10px; padding-right: 10px; padding-top:6px; }
+.Form .ValueStyle {display:block; font-size: 11px; font-weight: normal; color: #333333; padding-bottom: 2px; padding-top: 2px; }
+.Form .ValueField {padding-bottom:8px;padding-top:5px;}
+.Form .SuccessMsg {color: Green; font-size: 13px;}
+.Form .BackLink {color:Blue;font-size: 11px;text-decoration:underline;}
+.Form .TextField {width:155px;margin-left:5px;}
+.Form .HintStyle { font-size: 10px; font-weight: normal; color: #333333; padding-left: 10px; border-right: #3399cc 1px solid; padding-right: 10px; border-top: #3399cc 1px solid; padding-bottom: 5px; border-left: #3399cc 1px solid; padding-top: 5px; border-bottom: #3399cc 1px solid; background-color: #ffffcc; margin-left: 10px; margin-top: 5px; margin-bottom: 5px; }
+.Form .Button { padding-top: 5px; padding-bottom: 5px; color: #000000; font-size: 12px; font-weight: bold; background-color: #fed; border: 1px solid; border-top-color: #696; border-left-color: #696; border-right-color: #363; border-bottom-color: #363; margin-top: 10px; text-transform: uppercase; font-family: arial;}
+.Form .Rightalign {padding-left:7px;}
+.Form .Or { font-weight: bold; font-size: 14px; color: #336699; font-family: arial; padding-right: 10px; padding-left: 10px; text-transform: uppercase; }
+
+/**************************************************/
+/* SITE MAP
+/**************************************************/
+.SiteMap {}
+.SiteMap .ShoppingCartNavigation {padding-right:20px;margin:0px; border-right: #dddddd 1px solid;}
+.SiteMap h5 {margin-left:15px;margin-top:0px;}
+
+/**************************************************/
+/* SHOPPING CART NAVIGATION                                 
+/**************************************************/
+.ShoppingCartNavigation { margin-bottom: 15px; padding-bottom: 5px; padding-left: 5px; }
+.ShoppingCartNavigation .Title { color: black; font-weight: bold; padding-right: 10px; padding-left: 10px; font-size: 8pt;}
+.ShoppingCartNavigation .TreeView { padding-left: 10px; }
+.ShoppingCartNavigation .NodeStyle { font-weight: normal; font-size: 12px;padding-bottom: 2px; padding-top: 2px; }
+.ShoppingCartNavigation .RootNodeStyle { font-weight: bold; color: #cb5d2a; font-size: 8pt; padding-bottom: 2px; padding-top: 5px; text-transform: capitalize; }
+.ShoppingCartNavigation .RootNodeStyle A:Visited {color: #cb5d2a;}
+.ShoppingCartNavigation .HoverNodeStyle { color: red; }
+.ShoppingCartNavigation .ParentNodeStyle { }
+.ShoppingCartNavigation .LeafNodeStyle { font-size: 11px; margin-bottom: 5px; padding-top: 1px; color: #7777a4; }
+.ShoppingCartNavigation .LeafNodeStyle A:Visited {color: #7777a4;}
+.ShoppingCartNavigation .SelectedNodeStyle { font-weight:bold; }
+
+/*************************************************/
+/* FORGET PASSWORD
+/*************************************************/
+.ForgetPassword {font-family:Verdana;font-size:small;}
+.ForgetPassword .Title {font-size: 11px; font-weight: bold; color: #4b4b4b;}
+.ForgetPassword .InstructionTextStyle {font-style:italic; Color:Black }
+.ForgetPassword .SucessTextStyle {padding-bottom:150px;}
+.ForgetPassword .TextBoxStyle {font-size:0.8em;}
+.ForgetPassword .TitleTextStyle {background-color:#5D7B9D;font-weight:bold;font-size:0.9em;Color:White;}
+.ForgetPassword .SubmitButtonStyle {background-color:#FFFBFF; border:#CCCCCC 1px Solid; font-family:Verdana; font-size:0.8em; Color:#284775; }
+.ForgetPassword .ValueField {padding-bottom:10px;padding-top:9px;}
+.ForgetPassword .FieldStyle { display: block; white-space: nowrap; font-size: 11px; font-weight: bold; color: #4b4b4b; text-align: right;padding-right:5px;margin-top:10px; }
+.ForgetPassword .Button {padding-top: 5px; padding-bottom: 5px; color: #000000; font-size: 12px; font-weight: bold; background-color: #fed; border: 1px solid; border-top-color: #696; border-left-color: #696; border-right-color: #363; border-bottom-color: #363; margin-top: 10px; text-transform: uppercase; font-family: arial;}

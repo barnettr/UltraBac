@@ -1,0 +1,18 @@
+<%@ Master Language="C#" AutoEventWireup="true" %>
+<%@ Register Src="error.ascx" TagName="Error" TagPrefix="ZNode" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Error</title>    
+    <link id="Link1" href="../common/style.css" type="text/css" rel="stylesheet"  runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div><ZNode:Error ID="uxError" runat="server"  Visible="true"/></div>    
+    </form>
+</body>
+</html>

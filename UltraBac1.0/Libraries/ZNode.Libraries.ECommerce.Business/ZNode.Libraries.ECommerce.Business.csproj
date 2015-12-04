@@ -1,0 +1,199 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACE0D628-C806-49F6-8652-4CA7C0FD5B82}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZNode.Libraries.ECommerce.Business</RootNamespace>
+    <AssemblyName>ZNode.Libraries.ECommerce.Business</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>ZNode.Libraries.ECommerce.Business</SccProjectName>
+    <SccLocalPath>143~45eb89d3-280b-488a-b552-d25bc02fde0f</SccLocalPath>
+    <SccAuxPath>http://pop-devapps/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{1EA47954-8515-402d-82D9-B5C332120A8D}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51205.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZNode.Libraries.Framework.Business, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\ZNode.Libraries.Framework.Business.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ZnodeStorefrontIntegrator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\ZnodeStorefrontIntegrator.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContentHelper.cs" />
+    <Compile Include="ZNodeAddOn.cs" />
+    <Compile Include="ZNodeAddOnList.cs" />
+    <Compile Include="ZNodeAddOnValue.cs" />
+    <Compile Include="ZNodeContentManager.cs" />
+    <Compile Include="ZNodeCoupon.cs" />
+    <Compile Include="ZNodeGooglePayment.cs" />
+    <Compile Include="ZNodeManufacturer.cs" />
+    <Compile Include="ZNodeNavigation.cs" />
+    <Compile Include="ZNodePayFlowProPayment.cs" />
+    <Compile Include="ZNodePaymentException.cs" />
+    <Compile Include="ZNodePaymentProcessor.cs" />
+    <Compile Include="ZNodePaypalPayment.cs" />
+    <Compile Include="ZNodeSubmitOrderResponse.cs" />
+    <Compile Include="IGateway.cs" />
+    <Compile Include="ZNodePurchaseOrderPayment.cs" />
+    <Compile Include="ICreditCard.cs" />
+    <Compile Include="ZNodeCheckout.cs" />
+    <Compile Include="ZNodeCreditCard.cs" />
+    <Compile Include="ZNodeCreditCardPayment.cs" />
+    <Compile Include="ZNodeOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZNodePayment.cs" />
+    <Compile Include="ZNodePaymentResponse.cs" />
+    <Compile Include="ZNodeProductList.cs" />
+    <Compile Include="ZNodePromotion.cs" />
+    <Compile Include="ZNodeSearch.cs" />
+    <Compile Include="ZNodeAttributeType.cs" />
+    <Compile Include="ZNodeOrderState.cs" />
+    <Compile Include="ZNodeCrossSellItem.cs" />
+    <Compile Include="ZNodeCategory.cs" />
+    <Compile Include="ZNodeHighlight.cs" />
+    <Compile Include="ZNodePrice.cs" />
+    <Compile Include="ZNodePricingConfigurator.cs" />
+    <Compile Include="ZNodeProduct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZNodeAttribute.cs" />
+    <Compile Include="ZNodeProductType.cs" />
+    <Compile Include="ZNodeShippingEngine.cs" />
+    <Compile Include="ZNodeShoppingCartItem.cs" />
+    <Compile Include="ZNodeShoppingCart.cs" />
+    <Compile Include="ZNodeSKU.cs" />
+    <Compile Include="ZNodeTaxEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZNode.Libraries.DataAccess.Custom\ZNode.Libraries.DataAccess.Custom.csproj">
+      <Project>{AE498797-CD46-4DB1-84A7-90218D98CC7F}</Project>
+      <Name>ZNode.Libraries.DataAccess.Custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNode.Libraries.DataAccess.Data.SqlClient\ZNode.Libraries.DataAccess.Data.SqlClient.csproj">
+      <Project>{8996A7B4-57D3-440B-A545-A701844B8C4A}</Project>
+      <Name>ZNode.Libraries.DataAccess.Data.SqlClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNode.Libraries.DataAccess.Data\ZNode.Libraries.DataAccess.Data.csproj">
+      <Project>{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}</Project>
+      <Name>ZNode.Libraries.DataAccess.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNode.Libraries.DataAccess.Entities\ZNode.Libraries.DataAccess.Entities.csproj">
+      <Project>{20E43088-4618-4F4A-B8AD-FC31B50D94CD}</Project>
+      <Name>ZNode.Libraries.DataAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNode.Libraries.DataAccess.Service\ZNode.Libraries.DataAccess.Service.csproj">
+      <Project>{794327CE-DC0A-4381-89EE-4C00AFB08D5A}</Project>
+      <Name>ZNode.Libraries.DataAccess.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZNode.Libraries.Integrator\ZNode.Libraries.Integrator.csproj">
+      <Project>{30FE8FE6-ADB7-42C8-8CAC-69AD1918755C}</Project>
+      <Name>ZNode.Libraries.Integrator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

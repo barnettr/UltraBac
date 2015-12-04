@@ -1,0 +1,152 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30FE8FE6-ADB7-42C8-8CAC-69AD1918755C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZNode.Libraries.Integrator</RootNamespace>
+    <AssemblyName>ZnodeStorefrontIntegrator</AssemblyName>
+    <SccProjectName>ZNode.Libraries.Integrator</SccProjectName>
+    <SccLocalPath>143~45eb89d3-280b-488a-b552-d25bc02fde0f</SccLocalPath>
+    <SccAuxPath>http://pop-devapps/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{1EA47954-8515-402d-82D9-B5C332120A8D}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Payflow_dotNET, Version=4.2.1.0, Culture=neutral, PublicKeyToken=14aa1e8d77f2a97c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\Payflow_dotNET.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="paypal_base, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b37401294aaf5617">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\paypal_base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs" />
+    <Compile Include="CreditCardInfo.cs" />
+    <Compile Include="CustomGateway.cs" />
+    <Compile Include="GatwewaynSoftware.cs" />
+    <Compile Include="TaxRuleCollection.cs" />
+    <Compile Include="EncodeHelper.cs" />
+    <Compile Include="FedEx.cs" />
+    <Compile Include="FedExRateService.cs" />
+    <Compile Include="GatewayGoogle.cs" />
+    <Compile Include="GatewayNova.cs" />
+    <Compile Include="GatewayPayFlowPro.cs" />
+    <Compile Include="GatewayPaypal.cs" />
+    <Compile Include="GatewayPSIGate.cs" />
+    <Compile Include="GatewayType.cs" />
+    <Compile Include="GatewayAuthorize.cs" />
+    <Compile Include="GatewayInfo.cs" />
+    <Compile Include="GatewayOrbital.cs" />
+    <Compile Include="GatewayResponse.cs" />
+    <Compile Include="GoogleECService.cs" />
+    <Compile Include="PaymentProcessor.cs" />
+    <Compile Include="GatewayAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartItem.cs" />
+    <Compile Include="UPS.cs" />
+    <Compile Include="Web References\net.paymentech.wsvar\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://wsvar.paymentech.net/PaymentechGateway/wsdl/PaymentechGateway.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.paymentech.wsvar\</RelPath>
+      <UpdateFromURL>https://wsvar.paymentech.net/PaymentechGateway/wsdl/PaymentechGateway.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ZnodeStorefrontIntegrator_net_paymentech_wsvar_PaymentechGateway</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\EndOfDayResponseElement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\FlexCacheResponseElement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\MarkForCaptureResponseElement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\NewOrderResponseElement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\PaymentechGateway.wsdl" />
+    <None Include="Web References\net.paymentech.wsvar\ProfileResponseElement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\ReversalResponseElement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.paymentech.wsvar\UnmarkResponseElement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

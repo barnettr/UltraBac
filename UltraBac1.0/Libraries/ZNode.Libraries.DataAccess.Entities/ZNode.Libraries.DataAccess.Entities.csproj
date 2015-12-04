@@ -1,0 +1,1147 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20E43088-4618-4F4A-B8AD-FC31B50D94CD}</ProjectGuid>
+    <ProjectType>Local</ProjectType>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ZNode.Libraries.DataAccess.Entities</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\ZNode.Libraries.DataAccess.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <RootNamespace>ZNode.Libraries.DataAccess.Entities</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccProjectName>ZNode.Libraries.DataAccess.Entities</SccProjectName>
+    <SccLocalPath>143~45eb89d3-280b-488a-b552-d25bc02fde0f</SccLocalPath>
+    <SccAuxPath>http://pop-devapps/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{1EA47954-8515-402d-82D9-B5C332120A8D}</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>ZNode.Libraries.DataAccess.Entities.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>ZNode.Libraries.DataAccess.Entities.xml</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'GenerateDebug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>ZNode.Libraries.DataAccess.Entities.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <!-- Custom code folder: C:\ZnodeProjects\znodestorefront_framework\Libraries\ZNode.Libraries.DataAccess.Entities\App_Code -->
+  <ItemGroup>
+    <Compile Include="App_Code\**\*.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <!--<Compile Include="PortalEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Portal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PortalBase.generated.cs">
+      <DependentUpon>Portal.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Portal>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Portal>.generated.cs">
+			  <DependentUpon>TList<Portal>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductTypeBase.generated.cs">
+      <DependentUpon>ProductType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductType>.generated.cs">
+			  <DependentUpon>TList<ProductType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductCrossSellEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductCrossSell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductCrossSellBase.generated.cs">
+      <DependentUpon>ProductCrossSell.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductCrossSell>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductCrossSell>.generated.cs">
+			  <DependentUpon>TList<ProductCrossSell>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductHighlightEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductHighlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductHighlightBase.generated.cs">
+      <DependentUpon>ProductHighlight.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductHighlight>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductHighlight>.generated.cs">
+			  <DependentUpon>TList<ProductHighlight>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductImageEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductImageBase.generated.cs">
+      <DependentUpon>ProductImage.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductImage>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductImage>.generated.cs">
+			  <DependentUpon>TList<ProductImage>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductTypeAttributeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductTypeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductTypeAttributeBase.generated.cs">
+      <DependentUpon>ProductTypeAttribute.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductTypeAttribute>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductTypeAttribute>.generated.cs">
+			  <DependentUpon>TList<ProductTypeAttribute>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="PaymentTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="PaymentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PaymentTypeBase.generated.cs">
+      <DependentUpon>PaymentType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<PaymentType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<PaymentType>.generated.cs">
+			  <DependentUpon>TList<PaymentType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <Compile Include="PaymentTypeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <!--<Compile Include="ProductEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Product.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductBase.generated.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Product>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Product>.generated.cs">
+			  <DependentUpon>TList<Product>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="PaymentSettingEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="PaymentSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PaymentSettingBase.generated.cs">
+      <DependentUpon>PaymentSetting.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<PaymentSetting>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<PaymentSetting>.generated.cs">
+			  <DependentUpon>TList<PaymentSetting>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductAddOnEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductAddOn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductAddOnBase.generated.cs">
+      <DependentUpon>ProductAddOn.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductAddOn>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductAddOn>.generated.cs">
+			  <DependentUpon>TList<ProductAddOn>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductCategoryEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductCategoryBase.generated.cs">
+      <DependentUpon>ProductCategory.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductCategory>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductCategory>.generated.cs">
+			  <DependentUpon>TList<ProductCategory>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProductAttributeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ProductAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductAttributeBase.generated.cs">
+      <DependentUpon>ProductAttribute.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ProductAttribute>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ProductAttribute>.generated.cs">
+			  <DependentUpon>TList<ProductAttribute>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ProfileEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Profile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProfileBase.generated.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Profile>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Profile>.generated.cs">
+			  <DependentUpon>TList<Profile>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="StateEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="State.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateBase.generated.cs">
+      <DependentUpon>State.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<State>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<State>.generated.cs">
+			  <DependentUpon>TList<State>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="SKUAttributeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="SKUAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SKUAttributeBase.generated.cs">
+      <DependentUpon>SKUAttribute.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<SKUAttribute>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<SKUAttribute>.generated.cs">
+			  <DependentUpon>TList<SKUAttribute>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ShippingTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ShippingType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingTypeBase.generated.cs">
+      <DependentUpon>ShippingType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ShippingType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ShippingType>.generated.cs">
+			  <DependentUpon>TList<ShippingType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="TaxRuleEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="TaxRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxRuleBase.generated.cs">
+      <DependentUpon>TaxRule.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<TaxRule>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<TaxRule>.generated.cs">
+			  <DependentUpon>TList<TaxRule>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="AccountTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="AccountType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccountTypeBase.generated.cs">
+      <DependentUpon>AccountType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<AccountType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<AccountType>.generated.cs">
+			  <DependentUpon>TList<AccountType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="StoreEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Store.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreBase.generated.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Store>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Store>.generated.cs">
+			  <DependentUpon>TList<Store>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="SKUEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="SKU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SKUBase.generated.cs">
+      <DependentUpon>SKU.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<SKU>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<SKU>.generated.cs">
+			  <DependentUpon>TList<SKU>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ContactTemperatureEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ContactTemperature.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContactTemperatureBase.generated.cs">
+      <DependentUpon>ContactTemperature.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ContactTemperature>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ContactTemperature>.generated.cs">
+			  <DependentUpon>TList<ContactTemperature>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ShippingEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Shipping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingBase.generated.cs">
+      <DependentUpon>Shipping.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Shipping>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Shipping>.generated.cs">
+			  <DependentUpon>TList<Shipping>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ShippingRuleEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ShippingRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingRuleBase.generated.cs">
+      <DependentUpon>ShippingRule.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ShippingRule>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ShippingRule>.generated.cs">
+			  <DependentUpon>TList<ShippingRule>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ShippingServiceCodeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ShippingServiceCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingServiceCodeBase.generated.cs">
+      <DependentUpon>ShippingServiceCode.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ShippingServiceCode>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ShippingServiceCode>.generated.cs">
+			  <DependentUpon>TList<ShippingServiceCode>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ShippingRuleTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ShippingRuleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingRuleTypeBase.generated.cs">
+      <DependentUpon>ShippingRuleType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ShippingRuleType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ShippingRuleType>.generated.cs">
+			  <DependentUpon>TList<ShippingRuleType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="CaseTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="CaseType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaseTypeBase.generated.cs">
+      <DependentUpon>CaseType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<CaseType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<CaseType>.generated.cs">
+			  <DependentUpon>TList<CaseType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ContentPageEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ContentPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentPageBase.generated.cs">
+      <DependentUpon>ContentPage.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ContentPage>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ContentPage>.generated.cs">
+			  <DependentUpon>TList<ContentPage>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="CaseStatusEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="CaseStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaseStatusBase.generated.cs">
+      <DependentUpon>CaseStatus.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<CaseStatus>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<CaseStatus>.generated.cs">
+			  <DependentUpon>TList<CaseStatus>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ContentPageRevisionEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="ContentPageRevision.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentPageRevisionBase.generated.cs">
+      <DependentUpon>ContentPageRevision.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<ContentPageRevision>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<ContentPageRevision>.generated.cs">
+			  <DependentUpon>TList<ContentPageRevision>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="CategoryEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Category.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CategoryBase.generated.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Category>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Category>.generated.cs">
+			  <DependentUpon>TList<Category>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="CasePriorityEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="CasePriority.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CasePriorityBase.generated.cs">
+      <DependentUpon>CasePriority.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<CasePriority>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<CasePriority>.generated.cs">
+			  <DependentUpon>TList<CasePriority>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="AddOnEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="AddOn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddOnBase.generated.cs">
+      <DependentUpon>AddOn.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<AddOn>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<AddOn>.generated.cs">
+			  <DependentUpon>TList<AddOn>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="AccountEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Account.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccountBase.generated.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Account>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Account>.generated.cs">
+			  <DependentUpon>TList<Account>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="AddOnValueEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="AddOnValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddOnValueBase.generated.cs">
+      <DependentUpon>AddOnValue.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<AddOnValue>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<AddOnValue>.generated.cs">
+			  <DependentUpon>TList<AddOnValue>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="CaseEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Case.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaseBase.generated.cs">
+      <DependentUpon>Case.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Case>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Case>.generated.cs">
+			  <DependentUpon>TList<Case>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="AttributeTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="AttributeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttributeTypeBase.generated.cs">
+      <DependentUpon>AttributeType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<AttributeType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<AttributeType>.generated.cs">
+			  <DependentUpon>TList<AttributeType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="CountryEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Country.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CountryBase.generated.cs">
+      <DependentUpon>Country.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Country>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Country>.generated.cs">
+			  <DependentUpon>TList<Country>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="OrderProcessingTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="OrderProcessingType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderProcessingTypeBase.generated.cs">
+      <DependentUpon>OrderProcessingType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<OrderProcessingType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<OrderProcessingType>.generated.cs">
+			  <DependentUpon>TList<OrderProcessingType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="NoteEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Note.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NoteBase.generated.cs">
+      <DependentUpon>Note.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Note>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Note>.generated.cs">
+			  <DependentUpon>TList<Note>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="DiscountTypeEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="DiscountType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DiscountTypeBase.generated.cs">
+      <DependentUpon>DiscountType.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<DiscountType>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<DiscountType>.generated.cs">
+			  <DependentUpon>TList<DiscountType>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="OrderStateEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="OrderState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderStateBase.generated.cs">
+      <DependentUpon>OrderState.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<OrderState>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<OrderState>.generated.cs">
+			  <DependentUpon>TList<OrderState>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="DiscountTargetEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="DiscountTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DiscountTargetBase.generated.cs">
+      <DependentUpon>DiscountTarget.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<DiscountTarget>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<DiscountTarget>.generated.cs">
+			  <DependentUpon>TList<DiscountTarget>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="ManufacturerEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Manufacturer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManufacturerBase.generated.cs">
+      <DependentUpon>Manufacturer.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Manufacturer>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Manufacturer>.generated.cs">
+			  <DependentUpon>TList<Manufacturer>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="GatewayEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Gateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GatewayBase.generated.cs">
+      <DependentUpon>Gateway.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Gateway>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Gateway>.generated.cs">
+			  <DependentUpon>TList<Gateway>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="CouponEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Coupon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CouponBase.generated.cs">
+      <DependentUpon>Coupon.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Coupon>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Coupon>.generated.cs">
+			  <DependentUpon>TList<Coupon>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="OrderLineItemEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="OrderLineItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderLineItemBase.generated.cs">
+      <DependentUpon>OrderLineItem.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<OrderLineItem>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<OrderLineItem>.generated.cs">
+			  <DependentUpon>TList<OrderLineItem>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="HighlightEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Highlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HighlightBase.generated.cs">
+      <DependentUpon>Highlight.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Highlight>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Highlight>.generated.cs">
+			  <DependentUpon>TList<Highlight>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <!--<Compile Include="OrderEntityData.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderBase.generated.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!--
+			<Compile Include="TList<Order>.cs">
+			  <SubType>Code</SubType>
+			</Compile>	
+			<Compile Include="TList<Order>.generated.cs">
+			  <DependentUpon>TList<Order>.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			-->
+    <Compile Include="..\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBaseCore.generated.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>EntityBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityKeyBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityKeyBaseCore.generated.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>EntityKeyBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Filter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityPropertyComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityFactoryBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityLocator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityCacheItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GenericTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\BrokenRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\BrokenRulesList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\CommonRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\ValidationRuleArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\ValidationRuleHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\ValidationRuleInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\ValidationRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

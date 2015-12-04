@@ -1,0 +1,8 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="../common/main.master" %>
+<%@ Register Src="cart.ascx" TagName="Cart" TagPrefix="ZNode" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+   <ZNode:Cart ID="uxCart" runat="server"  Visible="true"/>
+</asp:Content>
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="TurnOffBreadcrumb" />

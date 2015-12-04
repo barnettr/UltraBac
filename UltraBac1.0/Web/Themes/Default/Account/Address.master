@@ -1,0 +1,7 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="../common/main.master" %>
+<%@ Register Src="address.ascx" TagName="Address" TagPrefix="ZNode" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+   <ZNode:Address ID="uxAddress" runat="server"  Visible="true"/>
+</asp:Content>

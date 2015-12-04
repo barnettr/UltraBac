@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Themes/Default/Common/main.master" AutoEventWireup="true" CodeFile="Category.master.cs" Inherits="Themes_Default_Category" %>
+<%@ MasterType VirtualPath="~/Themes/Default/Common/main.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadPlaceHolder" runat="server">
+
+	<asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server" />
+	
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+	
+	<POP:NavLeftSidebar ID="uxNavLeftSidebar" runat="server" />
+	
+		<div id="Content">
+			
+			<ZNode:CustomMessage runat="server" id="uxMessage" />
+			<ZNode:Content runat="server" ID="uxContent" Visible= "false" />
+			<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+			
+			<h2 runat="server" visible="false"><asp:Literal runat="server" ID="uxH2" /></h2>
+
+
+    <asp:Repeater ID="uxCategories" runat="server" OnItemDataBound="uxCategories_ItemDataBound">
+    <HeaderTemplate>
+            <div class="flexBucket" id="specificExampleBox">
+                <div class="flexBucket-top">
+	                <div class="flexBucket-top-left"><h3><asp:Literal runat="server" ID="bucketName" /></h3></div>
+	                <div class="clear"></div>
+                </div>
+                <div class="flexBucket-mid">
+                    <div class="flexBucket-content">                            
+        </HeaderTemplate>
+        <ItemTemplate>
+            <a id="uxCategoryLink" runat="server" class="actionButton">
+                <span class="actionButton-right actionButtons-long">
+                    <span class="actionButton-left">
+                        <asp:Literal ID="uxProduct" runat="server"></asp:Literal>
+                    </span>
+                </span>
+            </a>
+        </ItemTemplate>
+        <FooterTemplate>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="flexBucket-bot">
+	                <div class="flexBucket-bot-left"></div>
+                </div>
+            </div><!-- end of flex box -->
+        
+        </FooterTemplate>
+    </asp:Repeater>
+        
+
+   
+   <asp:Repeater ID="uxProducts" runat="server" OnItemDataBound="UxProducts_ItemDataBound">
+        	<HeaderTemplate>
+                    	<div class="flexBucket" id="Div1">
+                <div class="flexBucket-top">
+	                <div class="flexBucket-top-left"><h3><asp:Literal runat="server" ID="bucketName" Text="Products" /></h3></div>
+	                <div class="clear"></div>
+                </div>
+
+                <div class="flexBucket-mid">
+                    <div class="flexBucket-content">
+                        
+        	</HeaderTemplate>
+            <ItemTemplate>
+                   <a id="uxProductLink" runat="server" class="actionButton">
+                        <span class="actionButton-right actionButtons-long">
+                            <span class="actionButton-left">
+                                <asp:Literal ID="uxProduct" runat="server"></asp:Literal>
+                            </span>
+                        </span>
+                    </a>
+            </ItemTemplate>
+            <FooterTemplate>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="flexBucket-bot">
+	                <div class="flexBucket-bot-left"></div>
+                </div>
+            </div><!-- end of flex box -->
+            </FooterTemplate>
+     </asp:Repeater>
+   
+		<!-- /Content --></div>
+		
+		<asp:ContentPlaceHolder ID="RightColumn" runat="server" />
+  
+  <POP:RightSidebar ID="uxRightSidebar" runat="server" />
+</asp:Content>

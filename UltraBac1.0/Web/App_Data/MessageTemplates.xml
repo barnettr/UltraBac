@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+  <message key="DownloadTrialProductThankYou" subject="Thank you for downloading UltraBac trial software">
+    <![CDATA[
+    Thank you for downloading UltraBac trial software. To activate your trial, please use the following license key:
+    [LICENSE_KEY]
+    
+    Thanks again,
+    UltraBac
+    ]]>
+  </message>
+  <message key="RequestEvaluationProductThankYou" subject="Thank you for requesting an evaluation of UltraBac software">
+    <![CDATA[
+    Thank you for requesting an evaluation of UltraBac software. Someone will contact you soon.
+    
+    Thanks again,
+    UltraBac
+    ]]>
+  </message>
+  <message key="DownloadUpgradeThankYou" subject="Thank you for upgrading your UltraBac software">
+    <![CDATA[
+    Thank you for upgrading your UltraBac software.
+    
+    Thanks again,
+    UltraBac
+    ]]>
+  </message>
+  <message key="RequestResellerAccountThankYou" subject="Thank you for requesting an UltraBac Solution Provider account">
+    <![CDATA[
+    Thank you for requesting membership in the UltraBac Solution Provider Program. Someone will contact you soon.
+    
+    Thanks again,
+    UltraBac
+    ]]>
+  </message>
+</messages>

@@ -1,0 +1,84 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="content.master.cs" Inherits="admin_themes_standard_content" %>
+<%@ Register Src="~/Controls/spacer.ascx" TagName="spacer" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link id="Link1" href="~/Admin/Themes/Standard/style.css" type="text/css" rel="stylesheet" runat="server" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadPlaceholder" />
+</head>
+<body class="Body">
+    <form id="form1" runat="server">
+        <table cellpadding="0" cellspacing="0" border="0" width="1000px">
+            <tr>
+                <td><uc1:spacer id="Spacer6" SpacerHeight="1" SpacerWidth="200" runat="server"></uc1:spacer></td>
+                <td width="640px"><uc1:spacer id="Spacer2" SpacerHeight="1" SpacerWidth="800" runat="server"></uc1:spacer></td>
+            </tr>
+
+            <tr class="HeaderPane">                
+                <td class="LogoPane">
+                    <div class="Logo"><a id="A1" href="~/admin/default.aspx" runat="server"><img src="~/images/logo/znode_logo_small.gif" runat="server" border="0"></a></div>
+                </td>
+                <td valign="bottom" class="HeaderRight"> 
+                    <div><uc1:spacer id="Spacer3" SpacerHeight="20" SpacerWidth="10" runat="server" /></div>           
+                    <span id="Tabs">
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False"
+                            SiteMapProvider="ZNodeAdminSiteMap" />
+                        <ul>
+                        <li style="margin-left: 1px"><a id="A2" href="~/admin/secure/default.aspx" title="Home" runat="server">Dashboard</a></li>
+                        <li><a id="A5" href="~/admin/secure/CatalogManager.aspx" title="Catalog" runat="server">Catalog</a></li>
+                        <li id="current"><a id="A6" href="~/admin/secure/OrderManager.aspx" title="Sales" runat="server">Sales</a></li>
+                        <li><a id="A7" href="~/admin/secure/ContentManager.aspx" title="Design" runat="server">Design</a></li>	
+                        <li><a id="A8" href="~/admin/secure/SettingsManager.aspx" title="Settings" runat="server">Settings</a></li>	
+                        <li><a id="A9" href="~/admin/secure/MaintManager.aspx" title="Maintenance" runat="server">Maintenance</a></li>	
+                         <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>	
+                        </ul>                       
+                    </span>
+                    <span style="padding-left:15px; padding-top: 10px;"><img id="Img1" src="~/images/icons/magnify.gif" runat="server" align="absmiddle" style="padding-right:5px;" /><a id="A3" href="~/default.aspx" title="Browse Storefront" target="_blank" runat="server">Browse Storefront</a></span>
+                </td>
+            </tr> 
+            <tr>
+                <td colspan="2">                    
+                    <div id="TabsLine"></div>                              
+                </td> 
+            </tr>
+                 
+            <tr>
+                <td valign="top" class="LeftPane">
+                    <div align="left" class="AdminNavigation">
+                        <asp:TreeView ID="ctrlTreeView" runat="server" DataSourceID="SiteMapDataSource1" NodeIndent="0" ShowExpandCollapse="False" ExpandDepth="1">
+                            <ParentNodeStyle CssClass="ParentNodeStyle" Font-Bold="False" />
+                            <HoverNodeStyle CssClass="HoverNodeStyle" Font-Underline="True" ForeColor="#5555DD" />
+                            <SelectedNodeStyle CssClass="SelectedNodeStyle" Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                            <RootNodeStyle CssClass="RootNodeStyle" />
+                            <LeafNodeStyle CssClass="LeafNodeStyle" />
+                            <NodeStyle CssClass="NodeStyle" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                        </asp:TreeView>
+                    </div>
+                </td>                
+                <td class="CenterPane" valign="top">
+                    <div id="BreadCrumb"><asp:SiteMapPath ID="ctrlSiteMapPath" runat="server" SiteMapProvider="ZNodeAdminSiteMap" Font-Names="Verdana" PathSeparator=" > ">
+                        <PathSeparatorStyle />
+                        <CurrentNodeStyle />
+                        <NodeStyle />
+                        <RootNodeStyle />
+                    </asp:SiteMapPath></div>
+                    <div> 
+                        <asp:contentplaceholder id="uxMainContent" runat="server"></asp:contentplaceholder>
+                    </div>
+                </td>
+            </tr>    
+            <tr>
+                <td></td>
+                <td>
+                    <div class="FooterPane" align="left">
+                        Copyright 2007, Znode Inc, All Rights Reserved. Powered by <a href="http://www.znode.com" target="_blank">Znode Storefront</a> Technology.
+                    </div>
+                </td>
+            </tr>
+           
+        </table>
+    </form>
+</body>
+</html>

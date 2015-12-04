@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="PoweredByZnode.ascx.cs" Inherits="Controls_Placeholders_PoweredByZnode" %>
+<div id="PoweredByZNode"><a href="http://www.znode.com" target="_blank"><img id="Img3" src="~/images/logo/poweredby_small.gif" border="0"  runat="server" /></a></div> 

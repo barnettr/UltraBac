@@ -1,0 +1,145 @@
+<p><b>by Joshua Hoskins</b><br />April 25, 2007</p>
+<p>Virtualization has become one of the hottest trends in technology circles over the past year. Many companies are working on their virtualization strategies using technologies from Microsoft, VMWare, Xen, and others. While all of these systems are fine for creating new virtual machines, what happens when you wish to consolidate your current servers into a virtualized infrastructure?</p>
+<p>Microsoft and VMware both offer tools to ease the P2V (physical to virtual) transition, but they are limited in their scope and ability. You can also use migration strategies to move your data to new servers, but this almost inevitably causes more system downtime than desired. Recently, though, UltraBac released UBDR Gold, a new backup and imaging solution designed to ease P2V migrations, along with providing an image-based backup system for disaster recovery.</p>
+<p><b>Impressive Features</b></p>
+<p>When looking for a suitable P2V solution, UBDR Gold was one of the most highly recommended programs I could find. While I was not interested (at the time) in any of the other features, UltraBac offered an impressive array of features, including online imaging, differential imaging capabilities, and file by file backup. But the one that was of the most interest to me was the ability to do dissimilar hardware restores. This ability is what allows the P2V transitions.</p>
+<p>On its Web site, it mainly mentions this feature as being used for disaster recovery, though it does mention the ability to do disaster recovery to virtual machines. One of the most compelling pieces of this software is that it is totally hardware and virtual machine vendor agnostic. While we are currently using the Microsoft Virtual Server solution, there may, in the future, be a need to switch to VMware or another competitor. There is even a possibility of integrating other vendors into our current infrastructure. UDBR Gold gave us the assurance that our choice of virtualization technologies would in no way impact the use of its product (Figure A).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure A</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure A - UltraBac" src="~/data/default/images/catalog/original/070425_techrep-A.jpg"></td></tr>
+<tr>
+<td align=middle><small>UltraBac</small></td></tr></tbody></table></center>
+<p><b>Installation</b></p>
+<p>After receiving the needed software, I began the initial imaging process. The first step was to select the machine to be the UDBR server. This is the box that will host the image files, initiate the image backups, and push the restored images. As this activity would have minimal system impact, only during sporadic backups and restores, the main requirement was disk space to hold the images. The images created by UDBR Gold are not highly compressed and will require a large amount of disk space. While this could be a potential problem, the price of disk space (especially cheap SATA storage) is really minimal, and the lack of compression helps with their extremely fast image backups and restores (which we will see later).</p>
+<p>The server install is very easy and did not require the system to be rebooted. After the install, I needed to install the Image Backup Agent on the server I was looking to virtualize.</p>
+<p>This install can be done remotely or on the server. Unfortunately, it did require a reboot. While this was not totally unexpected (most backup software with open file options does), it would be nice if this was not a requirement, as rebooting active servers usually requires scheduled downtime and can prolong the P2V conversion. The install itself, though, was very smooth and caused no conflict with running software on the server.</p>
+<p>After we were able to schedule the maintenance window and reboot the physical server, an older Dell 2550 with dual 1GHz processors and 1 GB of RAM, we began the imaging process. This process is run from the UBDR server. The imaging itself was pretty straightforward using the backup wizard. You select the Image Disaster Recovery Agent from the backup type options (Figure B), then select that you want to back up partitions individually (needed if your OS install uses a utility partition), select the server you want to image, and if you want to be able to do differential backups to this image (this slows the process, but is great for disaster recovery).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure B</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure B - UBDR Gold" src="~/data/default/images/catalog/original/070425_techrep-B.jpg"></td></tr>
+<tr>
+<td align=middle><small>Image Backup Agent</small></td></tr></tbody></table></center>
+<p>You will then need to name your backup setup (preferable something descriptive) and select where you want to put your files (Figure C). You can select to save your files to a file or to save them to your selected backup path. This can be preferable if you wish to take multiple backups and have them all in the same location, whether tape or disk (Figure D).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure C</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure C - UBDR Gold Setup" src="~/data/default/images/catalog/original/070425_techrep-C.jpg"></td></tr>
+<tr>
+<td align=middle><small>Setup</small></td></tr></tbody></table></center><br />
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure D</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure D - UBDR Gold Setup Continued" src="~/data/default/images/catalog/original/070425_techrep-D.jpg"></td></tr>
+<tr>
+<td align=middle><small>More Setup</small></td></tr></tbody></table></center>
+<p>To create your backup device to disk (which is what I did), select the Device icon on the main menu, browse to the folder, and give it a name. After completing this step, you can make your image right then or schedule it (Figure E).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure E</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure E - Now or Schedule" src="~/data/default/images/catalog/original/070425_techrep-E.jpg"></td></tr>
+<tr>
+<td align=middle><small>Now or Schedule</small></td></tr></tbody></table></center>
+<p>Making the image does not take the server down. In my testing and production, it also caused only minimal system strain. It was actually lighter than our standard backup routine. The imaging itself took only slightly under 12 minutes for 16GB of data. After this, you can shut down the real server (if you are doing a P2V conversion), as it will no longer be needed.</p>
+<p>At this point, I had already prepared my virtual server. In the virtual system, I increased the size of the hard drive from 16GB (which was full on the old system) to 40GB and increased the RAM from 1024 MB to 1536 MB. I also recommend that you set your virtual disk to its full size and not use an expanding disk. The disk expansion greatly increases the time it takes to restore an image by approximately 300 percent in my testing. You will then need to boot your virtual server from the UBDR Gold CD (or an ISO image of it).</p>
+<p>After booting from the CD, you will notice that it uses a Windows pre-install environment similar to BartPE, though customized specifically for UBDR. After clicking to accept the license agreement, you will then need to configure your network card. It defaults to DHCP, and this should be fine in most cases. You will also need to input your account information and the name of the server you will be connecting to for the image restore (Figure F).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure F</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure F - Configure Network Card" src="~/data/default/images/catalog/original/070425_techrep-F.jpg"></td></tr>
+<tr>
+<td align=middle><small>Configure Network Card</small></td></tr></tbody></table></center>
+<p>You will then be immediately taken into the UltraBac application (Figure G). You will need to select the backup path (a UNC path) to the backup image you made and then select the actual image you wish to use (Figure H). You will then be at the actual restore screen (Figure I).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure G</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure G - UltraBac Application" src="~/data/default/images/catalog/original/070425_techrep-G.jpg"></td></tr>
+<tr>
+<td align=middle><small>UltraBac App</small></td></tr></tbody></table></center><br />
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure H</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure H - Select Image" src="~/data/default/images/catalog/original/070425_techrep-H.jpg"></td></tr>
+<tr>
+<td align=middle><small>Select Image</small></td></tr></tbody></table></center><br />
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure I</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure I - Restore Screen" src="~/data/default/images/catalog/original/070425_techrep-I.jpg"></td></tr>
+<tr>
+<td align=middle><small>Restore Screen</small></td></tr></tbody></table></center>
+<p>The first step for me was to restore the original MBR. I did this and it automatically created my partitions for me, including the Dell utility partition. I then went into the advanced tools (a button on the restore screen), deleted the 16GB partition, and created a new 40GB partition. This will allow me to restore the actual data of the server to the larger partition (Figure J).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure J</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure J - Partition" src="~/data/default/images/catalog/original/070425_techrep-J.jpg"></td></tr>
+<tr>
+<td align=middle><small>Partition</small></td></tr></tbody></table></center>
+<p>After closing the advanced tools, I selected the partition I wished to restore the image to (the 40GB one). I then selected the options Mark This Partition Active, Resize Partition(s), and Restoring To Different Hardware. After clicking Next, the restore starts. This process took about nine minutes to restore the 16GB of data to the virtual server (Figure K).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure K</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure K - Restore Settings" src="~/data/default/images/catalog/original/070425_techrep-K.jpg"></td></tr>
+<tr>
+<td align=middle><small>Restore Settings</small></td></tr></tbody></table></center>
+<p>A quick reboot later, and Windows 2000 Server booted right up with no problems. On logging in, it began the process of installing new hardware, which necessitated another reboot. I then had to assign the server's IP address to the new machine (IPs do not migrate) and install the Virtual Machine additions, and the new system was ready to rock. The total time from the start of the image till the new virtual system was completely ready for users was under 45 minutes (Figure L).</p>
+<center>
+<table>
+<tbody>
+<tr>
+<td align=middle>
+<p><b>Figure L</b></p></td></tr>
+<tr>
+<td align=middle><img alt="Figure L - Completion" src="~/data/default/images/catalog/original/070425_techrep-L.jpg"></td></tr>
+<tr>
+<td align=middle><small>Completion</small></td></tr></tbody></table></center>
+<p><b>Bottom Line</b></p>
+<p>UBDR Gold is a wonderful product. Having used the Microsoft Virtual Server Migration Toolkit (VSMT) for many P2V migrations, UBDR is a breath of fresh air. It is much less complicated, easier to use, and much faster. Of course, you will have to pay for UDBR Gold versus the free VSMT, but if you will be doing many (or even one) P2V conversion, save yourself the headache and time constraints and go with UBDR Gold.</p>
+<p><a href="http://articles.techrepublic.com.com/5100-10878_11-6179258.html" target=_blank>Click here to view article online</a>.</p>
+<p><a title="Tech Republic Review - PDF Format" href="~/data/default/content/070425_TechRep_GoldReview.pdf" target=_blank>Click here to view and print PDF version</a>.</p>
+<p><i>Joshua Hoskins can be contacted at <a title="support@techrepublic.com" href="mailto:support@techrepublic.com">support@techrepublic.com</a>.</i></p>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<codeSmith>
+	<propertySet>
+		<property name="ExecuteSql">True</property>
+		<property name="SQLFolderName">SQL</property>
+		<property name="ViewReport">True</property>
+		<property name="LaunchVisualStudio">False</property>
+		<property name="IncludeUnitTest">None</property>
+		<property name="IncludeComponentLayer">ServiceLayer</property>
+		<property name="IncludeDatabaseFeatures">SQLServer2005</property>
+		<property name="IncludeWCFDataAttributes">False</property>
+		<property name="IncludeXmlAttributes">False</property>
+		<property name="CustomCodeFolderName">App_Code</property>
+		<property name="BusinessLogicLayerNameSpace">Entities</property>
+		<property name="DataAccessLayerNameSpace">Data</property>
+		<property name="UnitTestsNameSpace">UnitTests</property>
+		<property name="SignAssembly">False</property>
+		<property name="GenerateWebLibrary">False</property>
+		<property name="IncludeDesignTimeSupport">False</property>
+		<property name="GenerateWebservice">False</property>
+		<property name="AttemptCreateLocalVirtualDirectory">False</property>
+		<property name="GenerateWebsite">False</property>
+		<property name="UseWebAppProject">False</property>
+		<property name="OverwriteWebConfig">False</property>
+		<property name="IncludeAtlasLibrary">False</property>
+		<property name="IncludeAtlasToolkit">False</property>
+		<property name="GenerateWebsiteAdmin">False</property>
+		<property name="WebAdminSiteName">Application Name</property>
+		<property name="RetryEnabled">False</property>
+		<property name="RetryMaxAttempts">5</property>
+		<property name="RetrySleepTime">1000</property>
+		<property name="IncludeCustoms">True</property>
+		<property name="CustomNonMatchingReturnType">DataSet</property>
+		<property name="IncludeDrop">True</property>
+		<property name="IncludeInsert">True</property>
+		<property name="IncludeUpdate">True</property>
+		<property name="IncludeSave">True</property>
+		<property name="IncludeDelete">True</property>
+		<property name="IncludeGet">True</property>
+		<property name="IncludeGetList">True</property>
+		<property name="IncludeGetListByFK">True</property>
+		<property name="IncludeGetListByIX">True</property>
+		<property name="IncludeFind">True</property>
+		<property name="IncludeManyToMany">True</property>
+		<property name="IncludeRelations">True</property>
+		<property name="IsolationLevel">None</property>
+		<property name="InsertSuffix">_Insert</property>
+		<property name="UpdateSuffix">_Update</property>
+		<property name="DeleteSuffix">_Delete</property>
+		<property name="SelectSuffix">_Get</property>
+		<property name="SelectAllSuffix">_List</property>
+		<property name="FindSuffix">_Find</property>
+		<property name="RootNameSpace">ZNode.Libraries.DataAccess</property>
+		<property name="OutputDirectory">C:\ZnodeProjects\znodestorefront_framework_secure\ZNodeDataAccess</property>
+		<property name="ComponentLayerNameSpace">Service</property>
+		<property name="SourceTables">
+			<connectionString>Data Source=GALACTICA\MSSMLBIZ;Initial Catalog=ZNodeStorefront;user id=admin;password=admin</connectionString>
+			<providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>
+			<tableList>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodePortal</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProductType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProductHighlight</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProductImage</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProductTypeAttribute</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodePaymentType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProductCrossSell</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProduct</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodePaymentSetting</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProductCategory</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProductAttribute</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeState</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeSKUAttribute</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeStore</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeTaxRule</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeAccountType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeSKU</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeProfile</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeShippingRuleType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeShippingType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeShipping</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeShippingRule</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeCategory</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeCaseType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeContentPage</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeCountry</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeContentPageRevision</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeAttributeType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeAccount</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeCaseStatus</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeCasePriority</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeCase</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeCoupon</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeNote</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeManufacturer</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeOrderState</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeOrderProcessingType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeDiscountType</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeDiscountTarget</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeOrderLineItem</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeHighlight</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeGateway</name>
+				</table>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodeOrder</name>
+				</table>
+			</tableList>
+		</property>
+		<property name="EnumTables">
+			<connectionString>Data Source=GALACTICA\MSSMLBIZ;Initial Catalog=ZNodeStorefront;user id=admin;password=admin</connectionString>
+			<providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>
+			<tableList>
+				<table>
+					<owner>dbo</owner>
+					<name>ZNodePaymentType</name>
+				</table>
+			</tableList>
+		</property>
+		<property name="WebServiceOutputPath">c:\NetTiers\ZNodeStorefront\WebServices</property>
+		<property name="WebServiceUrl">http://localhost/ZNodeStorefrontServices</property>
+		<property name="ChooseSourceDatabase">
+			<connectionString>Data Source=GALACTICA\MSSMLBIZ;Initial Catalog=ZNodeStorefront;user id=admin;password=admin</connectionString>
+			<providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>
+		</property>
+		<property name="CompanyName">ZNode Inc</property>
+		<property name="CompanyURL">http://www.znode.com</property>
+		<property name="RetrySleepStyle">Constant</property>
+		<property name="MethodNames">
+			<MethodNamesProperty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+				<Get>Get</Get>
+				<GetAll>GetAll</GetAll>
+				<GetPaged>GetPaged</GetPaged>
+				<Find>Find</Find>
+				<Insert>Insert</Insert>
+				<Update>Update</Update>
+				<Save>Save</Save>
+				<Delete>Delete</Delete>
+				<DeepLoad>DeepLoad</DeepLoad>
+				<DeepSave>DeepSave</DeepSave>
+				<GetTotalItems>GetTotalItems</GetTotalItems>
+				<BulkInsert>BulkInsert</BulkInsert>
+			</MethodNamesProperty>
+		</property>
+		<property name="StrippedTablePrefixes">ZNode</property>
+		<property name="EntityFormat">{0}</property>
+		<property name="CollectionFormat">{0}Collection</property>
+		<property name="GenericViewFormat">VList&lt;{0}&gt;</property>
+		<property name="GenericListFormat">TList&lt;{0}&gt;</property>
+		<property name="ProviderFormat">{0}Provider</property>
+		<property name="InterfaceFormat">I{0}</property>
+		<property name="BaseClassFormat">{0}Base</property>
+		<property name="EnumFormat">{0}List</property>
+		<property name="ManyToManyFormat">{0}From{1}</property>
+		<property name="ParseDbColDefaultVal">False</property>
+		<property name="AliasFilePath" />
+		<property name="ProcedurePrefix">ZNODE_NT_</property>
+		<property name="CustomProcedureStartsWith">_{0}_</property>
+		<property name="CSPUseDefaultValForNonNullableTypes">False</property>
+	</propertySet>
+</codeSmith>
